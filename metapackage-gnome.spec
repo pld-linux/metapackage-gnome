@@ -1,4 +1,5 @@
 Summary:	GNOME Desktop Suite
+Summary(pl):	¦rodowisko graficzne GNOME
 Name:		metapackage-gnome
 Version:	2.8
 Release:	1
@@ -12,6 +13,9 @@ Requires:	hal >= 0.4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-GNOME Desktop suite metapackage
+GNOME Desktop suite metapackage.
+
+%description -l pl
+Metapakiet ¶rodowiska graficznego GNOME.
 
 %files
