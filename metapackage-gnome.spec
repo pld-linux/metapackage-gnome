@@ -4,7 +4,6 @@
 #		- evince
 #		- gnome-games-extra-data
 #		- gstreamer-plugins
-#	- write extras summary/desc
 #
 Summary:	GNOME Desktop Suite
 Summary(pl):	¦rodowisko graficzne GNOME
@@ -76,8 +75,8 @@ GNOME Desktop suite metapackage.
 Metapakiet ¶rodowiska graficznego GNOME.
 
 %package extras
-Summary:	Write me
-Summary(pl):	Write me
+Summary:	Metapackage to install additional packages for GNOME Desktop
+Summary(pl):	Metapakiet instaluj±cy dodatkowe pakiety dla ¶rodowiska graficznego GNOME
 Group:		X11/Applications/Desktop
 Requires:	%{name} = %{version}-%{release}
 Requires:	bug-buddy >= 2.10.0-4
@@ -160,10 +159,11 @@ Requires:	vino >= 2.10.0-3
 Requires:	ximian-connector >= 2.2.2-2
 
 %description extras
-Write me.
+Metapackage to install additional packages for GNOME Desktop.
 
 %description extras -l pl
-Write me.
+Metapakiet instaluj±cy dodatkowe pakiety dla ¶rodowiska graficznego
+GNOME.
 
 %files
 
