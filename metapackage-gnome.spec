@@ -1,7 +1,6 @@
 # TODO:
 #	- send to builders: 
-#		- poppler
-#		- evince
+#		- evince (cairo, poppler)
 #		- gnome-games-extra-data
 #		- gstreamer-plugins
 #
@@ -9,42 +8,42 @@ Summary:	GNOME Desktop Suite
 Summary(pl):	¦rodowisko graficzne GNOME
 Name:		metapackage-gnome
 Version:	2.10.1
-Release:	0.1
+Release:	0.2
 License:	GPL/LGPL
 Group:		X11/Applications/Desktop
 Requires:	epiphany >= 1.6.3-1
 Requires:	eog >= 2.10.0-2
 Requires:	file-roller >= 2.10.3-1
-Requires:	gcalctool >= 5.5.42-1
+Requires:	gcalctool >= 5.5.42-2
 Requires:	gedit2 >= 2.10.2-1
 Requires:	ggv >= 2.8.4-3
-Requires:	gnome-applets-accessx-status >= 2.10.1-3
-Requires:	gnome-applets-battstat >= 2.10.1-3
-Requires:	gnome-applets-charpicker >= 2.10.1-3
-Requires:	gnome-applets-cpufreq >= 2.10.1-3
-Requires:	gnome-applets-drivemount >= 2.10.1-3
-Requires:	gnome-applets-geyes >= 2.10.1-3
-Requires:	gnome-applets-gtik >= 2.10.1-3
-Requires:	gnome-applets-gweather >= 2.10.1-3
-Requires:	gnome-applets-keyboard >= 2.10.1-3
-Requires:	gnome-applets-minicommander >= 2.10.1-3
-Requires:	gnome-applets-mixer >= 2.10.1-3
-Requires:	gnome-applets-modemlights >= 2.10.1-3
-Requires:	gnome-applets-multiload >= 2.10.1-3
-Requires:	gnome-applets-stickynotes >= 2.10.1-3
-Requires:	gnome-applets-trash >= 2.10.1-3
+Requires:	gnome-applets-accessx-status >= 1:2.10.1-4
+Requires:	gnome-applets-battstat >= 1:2.10.1-4
+Requires:	gnome-applets-charpicker >= 1:2.10.1-4
+Requires:	gnome-applets-cpufreq >= 1:2.10.1-4
+Requires:	gnome-applets-drivemount >= 1:2.10.1-4
+Requires:	gnome-applets-geyes >= 1:2.10.1-4
+Requires:	gnome-applets-gtik >= 1:2.10.1-4
+Requires:	gnome-applets-gweather >= 1:2.10.1-4
+Requires:	gnome-applets-keyboard >= 1:2.10.1-4
+Requires:	gnome-applets-minicommander >= 1:2.10.1-4
+Requires:	gnome-applets-mixer >= 1:2.10.1-4
+Requires:	gnome-applets-modemlights >= 1:2.10.1-4
+Requires:	gnome-applets-multiload >= 1:2.10.1-4
+Requires:	gnome-applets-stickynotes >= 1:2.10.1-4
+Requires:	gnome-applets-trash >= 1:2.10.1-4
 Requires:	gnome-media-cd >= 2.10.2-1
 Requires:	gnome-media-sound-recorder >= 2.10.2-1
 Requires:	gnome-media-volume-control >= 2.10.2-1
 Requires:	gnome-media-vumeter >= 2.10.2-1
-Requires:	gnome-panel >= 2.10.1-2
+Requires:	gnome-panel >= 2.10.1-3
 Requires:	gnome-session >= 2.10.0-2
 Requires:	gnome-terminal >= 2.10.0-3
-Requires:	gnome-utils-dict >= 2.10.1-1
-Requires:	gnome-utils-floppy >= 2.10.1-1
-Requires:	gnome-utils-logview >= 2.10.1-1
-Requires:	gnome-utils-screenshot >= 2.10.1-1
-Requires:	gnome-utils-search-tool >= 2.10.1-1
+Requires:	gnome-utils-dict >= 1:2.10.1-1
+Requires:	gnome-utils-floppy >= 1:2.10.1-1
+Requires:	gnome-utils-logview >= 1:2.10.1-1
+Requires:	gnome-utils-screenshot >= 1:2.10.1-1
+Requires:	gnome-utils-search-tool >= 1:2.10.1-1
 Requires:	gnome-volume-manager >= 1.2.2-1
 Requires:	gpdf >= 2.10.0-2
 Requires:	gstreamer >= 0.8.10-1
@@ -62,7 +61,7 @@ Requires:	gstreamer-gnomevfs >= 0.8.8-3
 Requires:	gstreamer-mad >= 0.8.8-3
 Requires:	gstreamer-mms >= 0.8.8-3
 Requires:	gstreamer-vorbis >= 0.8.8-3
-Requires:	metacity >= 2.10.1-1
+Requires:	metacity >= 2:2.10.1-1
 Requires:	nautilus >= 2.10.1-4
 Requires:	totem >= 1.0.1-3
 Requires:	yelp >= 2.6.5-4
@@ -118,11 +117,6 @@ Requires:	gnome-netstatus >= 2.10.0-3
 Requires:	gnome-speech >= 0.3.7-1
 Requires:	gnome-system-monitor >= 2.10.1-1
 Requires:	gnome-themes-Crux >= 2.10.1-1
-Requires:	gnome-themes-extras-Amaranth >= 0.8.1-1
-Requires:	gnome-themes-extras-Gorilla >= 0.8.1-1
-Requires:	gnome-themes-extras-Lush >= 0.8.1-1
-Requires:	gnome-themes-extras-Nuvola >= 0.8.1-1
-Requires:	gnome-themes-extras-Wasp >= 0.8.1-1
 Requires:	gnome-themes-Flat-Blue >= 2.10.1-1
 Requires:	gnome-themes-Glider >= 2.10.1-1
 Requires:	gnome-themes-Grand-Canyon >= 2.10.1-1
@@ -142,17 +136,22 @@ Requires:	gnome-themes-Smokey >= 2.10.1-1
 Requires:	gnome-themes-Smokey-Blue >= 2.10.1-1
 Requires:	gnome-themes-Smokey-Red >= 2.10.1-1
 Requires:	gnome-themes-Traditional >= 2.10.1-1
+Requires:	gnome-themes-extras-Amaranth >= 0.8.1-1
+Requires:	gnome-themes-extras-Gorilla >= 0.8.1-1
+Requires:	gnome-themes-extras-Lush >= 0.8.1-1
+Requires:	gnome-themes-extras-Nuvola >= 0.8.1-1
+Requires:	gnome-themes-extras-Wasp >= 0.8.1-1
 Requires:	gnopernicus >= 0.10.9-1
 Requires:	gok >= 1.0.3-2
 Requires:	goobox >= 0.9.91-1
-Requires:	metacity-themes-AgingGorilla >= 2.10.1-1
-Requires:	metacity-themes-Atlanta >= 2.10.1-1
-Requires:	metacity-themes-Bright >= 2.10.1-1
-Requires:	metacity-themes-Crux >= 2.10.1-1
-Requires:	metacity-themes-Esco >= 2.10.1-1
-Requires:	metacity-themes-Metabox >= 2.10.1-1
-Requires:	metacity-themes-Simple >= 2.10.1-1
-Requires:	nautilus-cd-burner >= 2.10.1-1
+Requires:	metacity-themes-AgingGorilla >= 2:2.10.1-1
+Requires:	metacity-themes-Atlanta >= 2:2.10.1-1
+Requires:	metacity-themes-Bright >= 2:2.10.1-1
+Requires:	metacity-themes-Crux >= 2:2.10.1-1
+Requires:	metacity-themes-Esco >= 2:2.10.1-1
+Requires:	metacity-themes-Metabox >= 2:2.10.1-1
+Requires:	metacity-themes-Simple >= 2:2.10.1-1
+Requires:	nautilus-cd-burner >= 2:2.10.1-1
 Requires:	rhythmbox >= 0.8.8-4
 Requires:	sound-juicer >= 2.10.1-1
 Requires:	vino >= 2.10.0-3
