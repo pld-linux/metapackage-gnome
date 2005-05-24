@@ -1,6 +1,5 @@
 # TODO:
 #	- send to builders: 
-#		- evince (cairo, poppler)
 #		- gnome-games-extra-data
 #		- gstreamer-plugins
 #
@@ -8,7 +7,7 @@ Summary:	GNOME Desktop Suite
 Summary(pl):	¦rodowisko graficzne GNOME
 Name:		metapackage-gnome
 Version:	2.10.1
-Release:	0.2
+Release:	0.3
 License:	GPL/LGPL
 Group:		X11/Applications/Desktop
 Requires:	epiphany >= 1.6.3-1
@@ -81,7 +80,6 @@ Requires:	%{name} = %{version}-%{release}
 Requires:	bug-buddy >= 2.10.0-4
 Requires:	dasher >= 3.2.15-2
 Requires:	epiphany-extensions >= 1.6.3-1
-Requires:	evince >= 0.3.1-1
 Requires:	evolution-calendar >= 2.2.2-2
 Requires:	evolution-mail >= 2.2.2-2
 Requires:	evolution-webcal >= 2.2.1-1
