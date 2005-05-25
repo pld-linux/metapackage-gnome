@@ -1,13 +1,8 @@
-# TODO:
-#	- send to builders: 
-#		- gnome-games-extra-data
-#		- gstreamer-plugins
-#
 Summary:	GNOME Desktop Suite
 Summary(pl):	¦rodowisko graficzne GNOME
 Name:		metapackage-gnome
 Version:	2.10.1
-Release:	0.3
+Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications/Desktop
 Requires:	epiphany >= 1.6.3-1
@@ -61,7 +56,7 @@ Requires:	gstreamer-mad >= 0.8.8-3
 Requires:	gstreamer-mms >= 0.8.8-3
 Requires:	gstreamer-vorbis >= 0.8.8-3
 Requires:	metacity >= 2:2.10.1-1
-Requires:	nautilus >= 2.10.1-4
+Requires:	nautilus >= 2.10.1-5
 Requires:	totem >= 1.0.1-3
 Requires:	yelp >= 2.6.5-4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -149,7 +144,7 @@ Requires:	metacity-themes-Crux >= 2:2.10.1-1
 Requires:	metacity-themes-Esco >= 2:2.10.1-1
 Requires:	metacity-themes-Metabox >= 2:2.10.1-1
 Requires:	metacity-themes-Simple >= 2:2.10.1-1
-Requires:	nautilus-cd-burner >= 2:2.10.1-1
+Requires:	nautilus-cd-burner >= 2.10.1-1
 Requires:	rhythmbox >= 0.8.8-4
 Requires:	sound-juicer >= 2.10.1-1
 Requires:	vino >= 2.10.0-3
