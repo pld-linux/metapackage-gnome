@@ -1,3 +1,8 @@
+#
+# TODO:
+# - metapackage with development tools (glade, bluefish, anjuta, etc.)
+# - metapackage 3rd party (everything else ;)
+#
 Summary:	GNOME Desktop Suite
 Summary(pl):	¦rodowisko graficzne GNOME
 Name:		metapackage-gnome
