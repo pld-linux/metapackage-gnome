@@ -185,7 +185,6 @@ Requires:	abiword >= 1:2.2.9
 Requires:	dia >= 1:0.94-8
 Requires:	glabels >= 2.0.2-3
 Requires:	gnumeric >= 1:1.4.3-5
-Requires:	
 
 %description office
 Office packages for GNOME Desktop.
