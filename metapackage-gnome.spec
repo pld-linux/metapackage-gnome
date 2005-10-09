@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Suite
 Summary(pl):	¦rodowisko graficzne GNOME
 Name:		metapackage-gnome
 Version:	2.12.1
-Release:	0.9
+Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications/Desktop
 Requires:	bug-buddy >= 2.12.1
