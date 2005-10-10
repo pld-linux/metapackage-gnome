@@ -77,6 +77,7 @@ Requires:	vino >= 2.12.0
 Requires:	xscreensaver-gnome2 >= 4.19-4
 Requires:	yelp >= 2.12.1-2
 Requires:	zenity >= 2.12.1
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
