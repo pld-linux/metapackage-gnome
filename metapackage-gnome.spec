@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Suite
 Summary(pl):	¦rodowisko graficzne GNOME
 Name:		metapackage-gnome
 Version:	2.14
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		X11/Applications/Desktop
 Requires:	bug-buddy >= 2.14.0
@@ -47,7 +47,7 @@ Requires:	gnome-session >= 2.14.1
 Requires:	gnome-system-monitor >= 2.14.1
 Requires:	gnome-terminal >= 2.14.1
 Requires:	gnome-themes-Clearlooks >= 2.14.0
-Requires:	gnome-utils-dict >= 1:2.14.0
+Requires:	gnome-utils-dictionary >= 1:2.14.0
 Requires:	gnome-utils-floppy >= 1:2.14.0
 Requires:	gnome-utils-logview >= 1:2.14.0
 Requires:	gnome-utils-screenshot >= 1:2.14.0
