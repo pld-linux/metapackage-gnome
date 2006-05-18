@@ -2,16 +2,22 @@ Summary:	GNOME Desktop Suite
 Summary(pl):	¦rodowisko graficzne GNOME
 Name:		metapackage-gnome
 Version:	2.14
-Release:	2
+Release:	3
 License:	GPL/LGPL
 Group:		X11/Applications/Desktop
 Requires:	bug-buddy >= 2.14.0
 Requires:	cdrtools
 Requires:	cdrtools-mkisofs
 Requires:	cdrtools-readcd
+Requires:	control-center >= 2.14.1
 Requires:	eog >= 2.14.1
 Requires:	epiphany >= 2.14.1
+Requires:	epiphany-extensions >= 2.14.1
+Requires:	epiphany-extension-gwget >= 0.98
 Requires:	evince >= 0.5.2
+Requires:	evolution >= 2.6.1
+Requires:	evolution-addressbook >= 2.6.1
+Requires:	evolution-mail >= 2.6.1
 Requires:	file-roller >= 2.14.1
 Requires:	gcalctool >= 5.7.32
 Requires:	gconf-editor >= 2.14.0
@@ -32,8 +38,11 @@ Requires:	gnome-applets-multiload >= 1:2.14.1
 Requires:	gnome-applets-stickynotes >= 1:2.14.1
 Requires:	gnome-applets-trash >= 1:2.14.1
 Requires:	gnome-backgrounds >= 2.14.1
+Requires:	gnome-commander >= 1.2.0
 Requires:	gnome-keyring-manager >= 2.14.0
+Requires:	gnome-mail-notification >= 2.0-3
 Requires:	gnome-media-cd >= 2.14.0
+Requires:	gnome-media-cddb >= 2.14.0
 Requires:	gnome-media-sound-recorder >= 2.14.0
 Requires:	gnome-media-volume-control >= 2.14.0
 Requires:	gnome-media-vumeter >= 2.14.0
@@ -45,6 +54,7 @@ Requires:	gnome-power-manager >= 2.14.3
 Requires:	gnome-screensaver >= 2.14.1
 Requires:	gnome-session >= 2.14.1
 Requires:	gnome-system-monitor >= 2.14.1
+Requires:	gnome-system-tools >= 2.14.0
 Requires:	gnome-terminal >= 2.14.1
 Requires:	gnome-themes-Clearlooks >= 2.14.0
 Requires:	gnome-utils-dictionary >= 1:2.14.0
@@ -72,13 +82,17 @@ Requires:	gstreamer-plugins-base >= 0.10.6
 Requires:	gstreamer-plugins-good >= 0.10.2
 Requires:	gstreamer-theora >= 0.10.6
 Requires:	gstreamer-vorbis >= 0.10.6
+Requires:	gucharmap >= 1.6.0
+Requires:	gwget >= 0.98
 Requires:	metacity >= 2:2.14.2
 Requires:	nautilus >= 2.14.1
 Requires:	nautilus-cd-burner >= 2.14.1
+Requires:	nautilus-extension-evince >= 0.5.2
+Requires:	nautilus-sendto >= 0.5
+Requires:	nautilus-sendto-evolution >= 0.5
 Requires:	sound-juicer >= 2.14.2
 Requires:	totem >= 1.4.0
 Requires:	vino >= 2.13.5
-Requires:	xscreensaver-gnome2 >= 4.19-4
 Requires:	yelp >= 2.14.1
 Requires:	zenity >= 2.14.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -94,14 +108,15 @@ Summary:	Metapackage to install additional packages for GNOME Desktop
 Summary(pl):	Metapakiet instaluj±cy dodatkowe pakiety dla ¶rodowiska graficznego GNOME
 Group:		X11/Applications/Desktop
 Requires:	%{name} = %{version}-%{release}
-Requires:	dasher >= 3.2.18
-Requires:	epiphany-extensions >= 2.14.1
+Requires:	dasher >= 4.0.2
 Requires:	evolution-calendar >= 2.6.1
-Requires:	evolution-exchange >= 2.4.1
-Requires:	evolution-mail >= 2.4.1
+Requires:	evolution-exchange >= 2.6.1
 Requires:	evolution-webcal >= 2.6.0
 Requires:	gdm >= 1:2.14.5
+Requires:	gnome-applet-fast-user-switch >= 2.14.1
+Requires:	gnome-games >= 1:2.14.1
 Requires:	gnome-games-blackjack >= 1:2.14.1
+Requires:	gnome-games-extra-data >= 2.14.0
 Requires:	gnome-games-extra-data-glines >= 2.14.0
 Requires:	gnome-games-extra-data-gnobots2 >= 2.14.0
 Requires:	gnome-games-extra-data-gnometris >= 2.14.0
@@ -122,7 +137,6 @@ Requires:	gnome-games-iagno >= 1:2.14.1
 Requires:	gnome-games-mahjongg >= 1:2.14.1
 Requires:	gnome-games-same-gnome >= 1:2.14.1
 Requires:	gnome-games-sol >= 1:2.14.1
-Requires:	gnome-mail-notification >= 2.0-3
 Requires:	gnome-themes-Crux >= 2.14.0
 Requires:	gnome-themes-extras-Amaranth >= 0.9.0-2
 Requires:	gnome-themes-extras-Gorilla >= 0.9.0-2
@@ -178,6 +192,7 @@ Requires:	metacity-themes-Crux >= 2:2.14.3
 Requires:	metacity-themes-Esco >= 2:2.14.3
 Requires:	metacity-themes-Metabox >= 2:2.14.3
 Requires:	metacity-themes-Simple >= 2:2.14.3
+Requires:	nautilus-actions >= 1.2
 Requires:	rhythmbox >= 0.9.4.1
 
 %description extras
