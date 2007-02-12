@@ -4,7 +4,7 @@
 # - metapackage 3rd party (everything else ;)
 #
 Summary:	GNOME Desktop Suite
-Summary(pl):	¦rodowisko graficzne GNOME
+Summary(pl.UTF-8):   Åšrodowisko graficzne GNOME
 Name:		metapackage-gnome
 Version:	2.14
 Release:	3
@@ -106,12 +106,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 GNOME Desktop suite metapackage.
 
-%description -l pl
-Metapakiet ¶rodowiska graficznego GNOME.
+%description -l pl.UTF-8
+Metapakiet Å›rodowiska graficznego GNOME.
 
 %package extras
 Summary:	Metapackage to install additional packages for GNOME Desktop
-Summary(pl):	Metapakiet instaluj±cy dodatkowe pakiety dla ¶rodowiska graficznego GNOME
+Summary(pl.UTF-8):   Metapakiet instalujÄ…cy dodatkowe pakiety dla Å›rodowiska graficznego GNOME
 Group:		X11/Applications/Desktop
 Requires:	%{name} = %{version}-%{release}
 Requires:	dasher >= 4.0.2
@@ -204,13 +204,13 @@ Requires:	rhythmbox >= 0.9.4.1
 %description extras
 Metapackage to install additional packages for GNOME Desktop.
 
-%description extras -l pl
-Metapakiet instaluj±cy dodatkowe pakiety dla ¶rodowiska graficznego
+%description extras -l pl.UTF-8
+Metapakiet instalujÄ…cy dodatkowe pakiety dla Å›rodowiska graficznego
 GNOME.
 
 %package extras-accessibility
 Summary:	Accessibility packages for GNOME Desktop
-Summary(pl):	Pakiety u³atwieñ dostêpu dla ¶rodowiska graficznego GNOME
+Summary(pl.UTF-8):   Pakiety uÅ‚atwieÅ„ dostÄ™pu dla Å›rodowiska graficznego GNOME
 Group:		X11/Applications/Desktop
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-mag >= 0.12.4
@@ -228,12 +228,12 @@ Requires:	gok >= 1.0.10
 %description extras-accessibility
 Accessibility packages for GNOME Desktop.
 
-%description extras-accessibility -l pl
-Pakiety u³atwieñ dostêpu dla ¶rodowiska graficznego GNOME.
+%description extras-accessibility -l pl.UTF-8
+Pakiety uÅ‚atwieÅ„ dostÄ™pu dla Å›rodowiska graficznego GNOME.
 
 %package office
 Summary:	Office suite for GNOME Desktop
-Summary(pl):	Pakiety biurowe dla ¶rodowiska graficznego GNOME
+Summary(pl.UTF-8):   Pakiety biurowe dla Å›rodowiska graficznego GNOME
 Group:		X11/Applications/Desktop
 Requires:	%{name} = %{version}-%{release}
 Requires:	abiword >= 1:2.2.9
@@ -244,8 +244,8 @@ Requires:	gnumeric >= 1:1.4.3-5
 %description office
 Office packages for GNOME Desktop.
 
-%description office -l pl
-Pakiety biurowe dla ¶rodowiska graficznego GNOME.
+%description office -l pl.UTF-8
+Pakiety biurowe dla Å›rodowiska graficznego GNOME.
 
 %files
 %files extras
