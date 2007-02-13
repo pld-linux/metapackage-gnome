@@ -4,7 +4,7 @@
 # - metapackage 3rd party (everything else ;)
 #
 Summary:	GNOME Desktop Suite
-Summary(pl.UTF-8):   Środowisko graficzne GNOME
+Summary(pl.UTF-8):	Środowisko graficzne GNOME
 Name:		metapackage-gnome
 Version:	2.14
 Release:	3
@@ -111,7 +111,7 @@ Metapakiet środowiska graficznego GNOME.
 
 %package extras
 Summary:	Metapackage to install additional packages for GNOME Desktop
-Summary(pl.UTF-8):   Metapakiet instalujący dodatkowe pakiety dla środowiska graficznego GNOME
+Summary(pl.UTF-8):	Metapakiet instalujący dodatkowe pakiety dla środowiska graficznego GNOME
 Group:		X11/Applications/Desktop
 Requires:	%{name} = %{version}-%{release}
 Requires:	dasher >= 4.0.2
@@ -210,7 +210,7 @@ GNOME.
 
 %package extras-accessibility
 Summary:	Accessibility packages for GNOME Desktop
-Summary(pl.UTF-8):   Pakiety ułatwień dostępu dla środowiska graficznego GNOME
+Summary(pl.UTF-8):	Pakiety ułatwień dostępu dla środowiska graficznego GNOME
 Group:		X11/Applications/Desktop
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-mag >= 0.12.4
@@ -233,7 +233,7 @@ Pakiety ułatwień dostępu dla środowiska graficznego GNOME.
 
 %package office
 Summary:	Office suite for GNOME Desktop
-Summary(pl.UTF-8):   Pakiety biurowe dla środowiska graficznego GNOME
+Summary(pl.UTF-8):	Pakiety biurowe dla środowiska graficznego GNOME
 Group:		X11/Applications/Desktop
 Requires:	%{name} = %{version}-%{release}
 Requires:	abiword >= 1:2.2.9
