@@ -2,9 +2,9 @@ Summary:	GNOME Desktop Suite
 Summary(pl):	¦rodowisko graficzne GNOME
 Name:		metapackage-gnome
 Version:	2.14
-Release:	3
+Release:	4
 License:	GPL/LGPL
-Group:		X11/Applications/Desktop
+Group:		X11/Applications
 Requires:	bug-buddy >= 2.14.0
 Requires:	cdrtools
 Requires:	cdrtools-mkisofs
@@ -12,8 +12,8 @@ Requires:	cdrtools-readcd
 Requires:	control-center >= 2.14.1
 Requires:	eog >= 2.14.1
 Requires:	epiphany >= 2.14.1
-Requires:	epiphany-extensions >= 2.14.1
 Requires:	epiphany-extension-gwget >= 0.98
+Requires:	epiphany-extensions >= 2.14.1
 Requires:	evince >= 0.5.2
 Requires:	evolution >= 2.6.1
 Requires:	evolution-addressbook >= 2.6.1
@@ -97,6 +97,8 @@ Requires:	yelp >= 2.14.1
 Requires:	zenity >= 2.14.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%prep
+
 %description
 GNOME Desktop suite metapackage.
 
@@ -106,7 +108,7 @@ Metapakiet ¶rodowiska graficznego GNOME.
 %package extras
 Summary:	Metapackage to install additional packages for GNOME Desktop
 Summary(pl):	Metapakiet instaluj±cy dodatkowe pakiety dla ¶rodowiska graficznego GNOME
-Group:		X11/Applications/Desktop
+Group:		X11/Applications
 Requires:	%{name} = %{version}-%{release}
 Requires:	dasher >= 4.0.2
 Requires:	evolution-calendar >= 2.6.1
@@ -138,11 +140,6 @@ Requires:	gnome-games-mahjongg >= 1:2.14.1
 Requires:	gnome-games-same-gnome >= 1:2.14.1
 Requires:	gnome-games-sol >= 1:2.14.1
 Requires:	gnome-themes-Crux >= 2.14.0
-Requires:	gnome-themes-extras-Amaranth >= 0.9.0-2
-Requires:	gnome-themes-extras-Gorilla >= 0.9.0-2
-Requires:	gnome-themes-extras-Lush >= 0.9.0-2
-Requires:	gnome-themes-extras-Nuvola >= 0.9.0-2
-Requires:	gnome-themes-extras-Wasp >= 0.9.0-2
 Requires:	gnome-themes-Flat-Blue >= 2.14.0
 Requires:	gnome-themes-Glider >= 2.14.0
 Requires:	gnome-themes-Grand-Canyon >= 2.14.0
@@ -155,8 +152,12 @@ Requires:	gnome-themes-Smokey >= 2.14.0
 Requires:	gnome-themes-Smokey-Blue >= 2.14.0
 Requires:	gnome-themes-Smokey-Red >= 2.14.0
 Requires:	gnome-themes-Traditional >= 2.14.0
+Requires:	gnome-themes-extras-Amaranth >= 0.9.0-2
+Requires:	gnome-themes-extras-Gorilla >= 0.9.0-2
+Requires:	gnome-themes-extras-Lush >= 0.9.0-2
+Requires:	gnome-themes-extras-Nuvola >= 0.9.0-2
+Requires:	gnome-themes-extras-Wasp >= 0.9.0-2
 Requires:	gstreamer-aac >= 0.10.1
-Requires:	gstreamer-amrnb >= 0.10.3
 Requires:	gstreamer-audio-effects-bad >= 0.10.1
 Requires:	gstreamer-dts >= 0.10.1
 Requires:	gstreamer-dv >= 0.10.2
@@ -205,7 +206,7 @@ GNOME.
 %package extras-accessibility
 Summary:	Accessibility packages for GNOME Desktop
 Summary(pl):	Pakiety u³atwieñ dostêpu dla ¶rodowiska graficznego GNOME
-Group:		X11/Applications/Desktop
+Group:		X11/Applications
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-mag >= 0.12.4
 Requires:	gnome-speech >= 0.3.10
@@ -228,7 +229,7 @@ Pakiety u³atwieñ dostêpu dla ¶rodowiska graficznego GNOME.
 %package office
 Summary:	Office suite for GNOME Desktop
 Summary(pl):	Pakiety biurowe dla ¶rodowiska graficznego GNOME
-Group:		X11/Applications/Desktop
+Group:		X11/Applications
 Requires:	%{name} = %{version}-%{release}
 Requires:	abiword >= 1:2.2.9
 Requires:	dia >= 1:0.94-8
@@ -241,7 +242,14 @@ Office packages for GNOME Desktop.
 %description office -l pl
 Pakiety biurowe dla ¶rodowiska graficznego GNOME.
 
+%clean
+rm -rf $RPM_BUILD_ROOT
+
 %files
+%defattr(644,root,root,755)
 %files extras
+%defattr(644,root,root,755)
 %files extras-accessibility
+%defattr(644,root,root,755)
 %files office
+%defattr(644,root,root,755)
