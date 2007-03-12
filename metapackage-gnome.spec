@@ -9,7 +9,7 @@ Name:		metapackage-gnome
 Version:	2.14
 Release:	3
 License:	GPL/LGPL
-Group:		X11/Applications/Desktop
+Group:		X11/Applications
 Requires:	bug-buddy >= 2.14.0
 Requires:	cdrtools
 Requires:	cdrtools-mkisofs
@@ -17,8 +17,8 @@ Requires:	cdrtools-readcd
 Requires:	control-center >= 2.14.1
 Requires:	eog >= 2.14.1
 Requires:	epiphany >= 2.14.1
-Requires:	epiphany-extensions >= 2.14.1
 Requires:	epiphany-extension-gwget >= 0.98
+Requires:	epiphany-extensions >= 2.14.1
 Requires:	evince >= 0.5.2
 Requires:	evolution >= 2.6.1
 Requires:	evolution-addressbook >= 2.6.1
@@ -112,7 +112,7 @@ Metapakiet środowiska graficznego GNOME.
 %package extras
 Summary:	Metapackage to install additional packages for GNOME Desktop
 Summary(pl.UTF-8):	Metapakiet instalujący dodatkowe pakiety dla środowiska graficznego GNOME
-Group:		X11/Applications/Desktop
+Group:		X11/Applications
 Requires:	%{name} = %{version}-%{release}
 Requires:	dasher >= 4.0.2
 Requires:	evolution-calendar >= 2.6.1
@@ -144,11 +144,6 @@ Requires:	gnome-games-mahjongg >= 1:2.14.1
 Requires:	gnome-games-same-gnome >= 1:2.14.1
 Requires:	gnome-games-sol >= 1:2.14.1
 Requires:	gnome-themes-Crux >= 2.14.0
-Requires:	gnome-themes-extras-Amaranth >= 0.9.0-2
-Requires:	gnome-themes-extras-Gorilla >= 0.9.0-2
-Requires:	gnome-themes-extras-Lush >= 0.9.0-2
-Requires:	gnome-themes-extras-Nuvola >= 0.9.0-2
-Requires:	gnome-themes-extras-Wasp >= 0.9.0-2
 Requires:	gnome-themes-Flat-Blue >= 2.14.0
 Requires:	gnome-themes-Glider >= 2.14.0
 Requires:	gnome-themes-Grand-Canyon >= 2.14.0
@@ -161,6 +156,11 @@ Requires:	gnome-themes-Smokey >= 2.14.0
 Requires:	gnome-themes-Smokey-Blue >= 2.14.0
 Requires:	gnome-themes-Smokey-Red >= 2.14.0
 Requires:	gnome-themes-Traditional >= 2.14.0
+Requires:	gnome-themes-extras-Amaranth >= 0.9.0-2
+Requires:	gnome-themes-extras-Gorilla >= 0.9.0-2
+Requires:	gnome-themes-extras-Lush >= 0.9.0-2
+Requires:	gnome-themes-extras-Nuvola >= 0.9.0-2
+Requires:	gnome-themes-extras-Wasp >= 0.9.0-2
 Requires:	gstreamer-aac >= 0.10.1
 Requires:	gstreamer-audio-effects-bad >= 0.10.1
 Requires:	gstreamer-dts >= 0.10.1
@@ -210,7 +210,7 @@ GNOME.
 %package extras-accessibility
 Summary:	Accessibility packages for GNOME Desktop
 Summary(pl.UTF-8):	Pakiety ułatwień dostępu dla środowiska graficznego GNOME
-Group:		X11/Applications/Desktop
+Group:		X11/Applications
 Requires:	%{name} = %{version}-%{release}
 Requires:	gnome-mag >= 0.12.4
 Requires:	gnome-speech >= 0.3.10
@@ -233,7 +233,7 @@ Pakiety ułatwień dostępu dla środowiska graficznego GNOME.
 %package office
 Summary:	Office suite for GNOME Desktop
 Summary(pl.UTF-8):	Pakiety biurowe dla środowiska graficznego GNOME
-Group:		X11/Applications/Desktop
+Group:		X11/Applications
 Requires:	%{name} = %{version}-%{release}
 Requires:	abiword >= 1:2.2.9
 Requires:	dia >= 1:0.94-8
@@ -246,7 +246,16 @@ Office packages for GNOME Desktop.
 %description office -l pl.UTF-8
 Pakiety biurowe dla środowiska graficznego GNOME.
 
+%prep
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
 %files
+%defattr(644,root,root,755)
 %files extras
+%defattr(644,root,root,755)
 %files extras-accessibility
+%defattr(644,root,root,755)
 %files office
+%defattr(644,root,root,755)
