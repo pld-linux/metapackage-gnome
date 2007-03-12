@@ -162,7 +162,6 @@ Requires:	gnome-themes-Smokey-Blue >= 2.14.0
 Requires:	gnome-themes-Smokey-Red >= 2.14.0
 Requires:	gnome-themes-Traditional >= 2.14.0
 Requires:	gstreamer-aac >= 0.10.1
-Requires:	gstreamer-amrnb >= 0.10.3
 Requires:	gstreamer-audio-effects-bad >= 0.10.1
 Requires:	gstreamer-dts >= 0.10.1
 Requires:	gstreamer-dv >= 0.10.2
