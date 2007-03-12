@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Suite
 Summary(pl):	¦rodowisko graficzne GNOME
 Name:		metapackage-gnome
 Version:	2.14
-Release:	4
+Release:	5
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	bug-buddy >= 2.14.0
@@ -96,8 +96,6 @@ Requires:	vino >= 2.13.5
 Requires:	yelp >= 2.14.1
 Requires:	zenity >= 2.14.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%prep
 
 %description
 GNOME Desktop suite metapackage.
@@ -241,6 +239,8 @@ Office packages for GNOME Desktop.
 
 %description office -l pl
 Pakiety biurowe dla ¶rodowiska graficznego GNOME.
+
+%prep
 
 %clean
 rm -rf $RPM_BUILD_ROOT
