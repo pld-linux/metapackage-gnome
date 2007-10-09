@@ -269,7 +269,7 @@ Accessibility packages for GNOME Desktop.
 Pakiety ułatwień dostępu dla środowiska graficznego GNOME.
 
 %package office
-Summary:	Administration packages for GNOME Desktop
+Summary:	Office suite for GNOME Desktop
 Summary(pl.UTF-8):	Pakiety biurowe dla środowiska graficznego GNOME
 Group:		X11/Applications
 Requires:	%{name} = %{version}-%{release}
@@ -279,13 +279,13 @@ Requires:	glabels >= 2.1.3
 Requires:	gnumeric >= 1:1.7.12
 
 %description office
-Administration packages for GNOME Desktop.
+Office packages for GNOME Desktop.
 
 %description office -l pl.UTF-8
 Pakiety biurowe dla środowiska graficznego GNOME.
 
 %package admin
-Summary:	Office suite for GNOME Desktop
+Summary:	Administration packages for GNOME Desktop
 Summary(pl.UTF-8):	Pakiety do zarządzania środowiskiem graficznym GNOME
 Group:		X11/Applications
 Requires:	%{name} = %{version}-%{release}
@@ -293,7 +293,7 @@ Requires:	pessulus >= 2.16.3
 Requires:	sabayon >= 2.20.1
 
 %description admin
-Office packages for GNOME Desktop.
+Administration packages for GNOME Desktop.
 
 %description admin -l pl.UTF-8
 Pakiety do zarządzania środowiskiem graficznym GNOME.
