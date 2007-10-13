@@ -8,7 +8,7 @@ Summary:	GNOME Desktop Suite
 Summary(pl.UTF-8):	Środowisko graficzne GNOME
 Name:		metapackage-gnome
 Version:	2.20.0
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	alacarte >= 0.11.3
