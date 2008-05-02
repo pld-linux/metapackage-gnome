@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	2.22.1
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -194,7 +194,7 @@ Requires:	gnome-media-cddb >= 2.22.0
 Requires:	gnome-media-sound-recorder >= 2.22.0
 Requires:	gnome-media-volume-control >= 2.22.0
 Requires:	gnome-media-vumeter >= 2.22.0
-Requires:	gnome-netstatus >= 2.22.0
+Requires:	gnome-netstatus >= 2.12.0
 Requires:	gnome-nettool >= 2.22.0
 Requires:	gnome-power-manager >= 2.22.0
 Requires:	gnome-screensaver >= 2.22.0
