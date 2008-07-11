@@ -1,8 +1,8 @@
 Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
-Version:	2.22.1
-Release:	2
+Version:	2.22.3
+Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -54,7 +54,7 @@ Requires:	gstreamer-wildmidi
 Requires:	gstreamer-x264
 Requires:	gstreamer-xvid
 Requires:	gwget >= 0.99
-Requires:	liferea >= 1.4.15
+Requires:	liferea >= 1.4.16
 Requires:	rhythmbox >= 0.11.5
 Obsoletes:	metapackage-gnome-extras
 BuildArch:	noarch
@@ -71,18 +71,18 @@ Summary:	Accessibility packages for GNOME Desktop Environment
 Summary(pl.UTF-8):	Pakiety ułatwień dostępu dla środowiska graficznego GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	gnome-mag >= 0.14.10
-Requires:	gnome-speech >= 0.4.18
-Requires:	gok >= 1.3.6
-Requires:	orca >= 2.22.1
-Suggests:	gnome-themes-HighContrast >= 2.22.0
-Suggests:	gnome-themes-HighContrast-SVG >= 2.22.0
-Suggests:	gnome-themes-HighContrastInverse >= 2.22.0
-Suggests:	gnome-themes-HighContrastLargePrint >= 2.22.0
-Suggests:	gnome-themes-HighContrastLargePrintInverse >= 2.22.0
-Suggests:	gnome-themes-LargePrint >= 2.22.0
-Suggests:	gnome-themes-LowContrast >= 2.22.0
-Suggests:	gnome-themes-LowContrastLargePrint >= 2.22.0
+Requires:	gnome-mag >= 0.15.0
+Requires:	gnome-speech >= 0.4.19
+Requires:	gok >= 1.3.7
+Requires:	orca >= 2.22.2
+Suggests:	gnome-themes-HighContrast >= 2.22.2
+Suggests:	gnome-themes-HighContrast-SVG >= 2.22.2
+Suggests:	gnome-themes-HighContrastInverse >= 2.22.2
+Suggests:	gnome-themes-HighContrastLargePrint >= 2.22.2
+Suggests:	gnome-themes-HighContrastLargePrintInverse >= 2.22.2
+Suggests:	gnome-themes-LargePrint >= 2.22.2
+Suggests:	gnome-themes-LowContrast >= 2.22.2
+Suggests:	gnome-themes-LowContrastLargePrint >= 2.22.2
 Provides:	metapackage-gnome-extras-accessibility
 Obsoletes:	metapackage-gnome-extras-accessibility
 
@@ -110,20 +110,20 @@ Pakiety do zarządzania środowiskiem graficznym GNOME.
 Summary:	The core components of the GNOME Desktop Environment
 Summary(pl.UTF-8):	Podstawowe składniki środowiska graficznego GNOME
 Group:		X11/Applications
-Requires:	eog >= 2.22.1
+Requires:	eog >= 2.22.3
 Requires:	fam
-Requires:	gedit2 >= 2.22.1
-Requires:	gnome-control-center >= 2.22.1
-Requires:	gnome-desktop >= 2.22.1
+Requires:	gedit2 >= 2.22.3
+Requires:	gnome-control-center >= 1:2.22.2.1
+Requires:	gnome-desktop >= 2.22.3
 Requires:	gnome-icon-theme >= 2.22.0
-Requires:	gnome-menus >= 2.22.1
-Requires:	gnome-panel >= 2.22.1.3
-Requires:	gnome-session >= 2.22.1
-Requires:	gnome-terminal >= 2.22.1
-Requires:	gtk2-engines >= 2.14.1
-Requires:	nautilus >= 2.22.2
+Requires:	gnome-menus >= 2.22.2
+Requires:	gnome-panel >= 2.22.2
+Requires:	gnome-session >= 2.22.3
+Requires:	gnome-terminal >= 2.22.3
+Requires:	gtk2-engines >= 1:2.14.3
+Requires:	nautilus >= 2.22.4
 Requires:	yelp >= 2.22.1
-Suggests:	metacity >= 2.22.0
+Suggests:	metacity >= 2:2.22.0
 
 %description core
 The core components of the GNOME Desktop Environment.
@@ -138,76 +138,76 @@ Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	alacarte >= 0.11.5
 Requires:	bug-buddy >= 2.22.0
-Requires:	cheese >= 2.22.0
+Requires:	cheese >= 2.22.3
 Requires:	dasher >= 4.6.1
 Requires:	ekiga >= 2.0.11
-Requires:	epiphany >= 2.22.0
-Requires:	epiphany-extensions >= 2.22.0
-Requires:	evince >= 2.22.0
-Requires:	evolution >= 2.22.0
-Requires:	evolution-addressbook >= 2.22.0
-Requires:	evolution-calendar >= 2.22.0
-Requires:	evolution-mail >= 2.22.0
-Requires:	evolution-pilot >= 2.22.0
-Requires:	file-roller >= 2.22.0
-Requires:	gcalctool >= 2.22.0
+Requires:	epiphany >= 2.22.2
+Requires:	epiphany-extensions >= 2.22.2
+Requires:	evince >= 2.22.2
+Requires:	evolution >= 2.22.3.1
+Requires:	evolution-addressbook >= 2.22.3.1
+Requires:	evolution-calendar >= 2.22.3.1
+Requires:	evolution-mail >= 2.22.3.1
+Requires:	evolution-pilot >= 2.22.3.1
+Requires:	file-roller >= 2.22.4
+Requires:	gcalctool >= 2.22.3
 Requires:	gconf-editor >= 2.22.0
-Requires:	gdm >= 1:2.20.0
-Requires:	gedit-plugins >= 2.22.1
-Requires:	gnome-applet-deskbar >= 2.22.0
+Requires:	gdm >= 1:2.20.7
+Requires:	gedit-plugins >= 2.22.2
+Requires:	gnome-applet-deskbar >= 2.22.3
 Requires:	gnome-applet-fast-user-switch >= 2.22.0
-Requires:	gnome-applets-accessx-status >= 1:2.22.1
-Requires:	gnome-applets-battstat >= 1:2.22.1
-Requires:	gnome-applets-charpicker >= 1:2.22.1
-Requires:	gnome-applets-cpufreq >= 1:2.22.1
-Requires:	gnome-applets-drivemount >= 1:2.22.1
-Requires:	gnome-applets-geyes >= 1:2.22.1
-Requires:	gnome-applets-gweather >= 1:2.22.1
-Requires:	gnome-applets-invest >= 1:2.22.1
-Requires:	gnome-applets-keyboard >= 1:2.22.1
-Requires:	gnome-applets-minicommander >= 1:2.22.1
-Requires:	gnome-applets-mixer >= 1:2.22.1
-Requires:	gnome-applets-modemlights >= 1:2.22.1
-Requires:	gnome-applets-multiload >= 1:2.22.1
-Requires:	gnome-applets-stickynotes >= 1:2.22.1
-Requires:	gnome-applets-trash >= 1:2.22.1
+Requires:	gnome-applets-accessx-status >= 1:2.22.3
+Requires:	gnome-applets-battstat >= 1:2.22.3
+Requires:	gnome-applets-charpicker >= 1:2.22.3
+Requires:	gnome-applets-cpufreq >= 1:2.22.3
+Requires:	gnome-applets-drivemount >= 1:2.22.3
+Requires:	gnome-applets-geyes >= 1:2.22.3
+Requires:	gnome-applets-gweather >= 1:2.22.3
+Requires:	gnome-applets-invest >= 1:2.22.3
+Requires:	gnome-applets-keyboard >= 1:2.22.3
+Requires:	gnome-applets-minicommander >= 1:2.22.3
+Requires:	gnome-applets-mixer >= 1:2.22.3
+Requires:	gnome-applets-modemlights >= 1:2.22.3
+Requires:	gnome-applets-multiload >= 1:2.22.3
+Requires:	gnome-applets-stickynotes >= 1:2.22.3
+Requires:	gnome-applets-trash >= 1:2.22.3
 Requires:	gnome-backgrounds >= 2.22.0
-Requires:	gnome-games-blackjack >= 1:2.22.1.1
-Requires:	gnome-games-glchess >= 1:2.22.1.1
-Requires:	gnome-games-glines >= 1:2.22.1.1
-Requires:	gnome-games-gnect >= 1:2.22.1.1
-Requires:	gnome-games-gnibbles >= 1:2.22.1.1
-Requires:	gnome-games-gnobots2 >= 1:2.22.1.1
-Requires:	gnome-games-gnometris >= 1:2.22.1.1
-Requires:	gnome-games-gnomine >= 1:2.22.1.1
-Requires:	gnome-games-gnotravex >= 1:2.22.1.1
-Requires:	gnome-games-gnotski >= 1:2.22.1.1
-Requires:	gnome-games-gtali >= 1:2.22.1.1
-Requires:	gnome-games-iagno >= 1:2.22.1.1
-Requires:	gnome-games-mahjongg >= 1:2.22.1.1
-Requires:	gnome-games-same-gnome >= 1:2.22.1.1
-Requires:	gnome-games-sol >= 1:2.22.1.1
-Requires:	gnome-games-sudoku >= 1:2.22.1.1
-Requires:	gnome-keyring >= 2.22.0
+Requires:	gnome-games-blackjack >= 1:2.22.3
+Requires:	gnome-games-glchess >= 1:2.22.3
+Requires:	gnome-games-glines >= 1:2.22.3
+Requires:	gnome-games-gnect >= 1:2.22.3
+Requires:	gnome-games-gnibbles >= 1:2.22.3
+Requires:	gnome-games-gnobots2 >= 1:2.22.3
+Requires:	gnome-games-gnometris >= 1:2.22.3
+Requires:	gnome-games-gnomine >= 1:2.22.3
+Requires:	gnome-games-gnotravex >= 1:2.22.3
+Requires:	gnome-games-gnotski >= 1:2.22.3
+Requires:	gnome-games-gtali >= 1:2.22.3
+Requires:	gnome-games-iagno >= 1:2.22.3
+Requires:	gnome-games-mahjongg >= 1:2.22.3
+Requires:	gnome-games-same-gnome >= 1:2.22.3
+Requires:	gnome-games-sol >= 1:2.22.3
+Requires:	gnome-games-sudoku >= 1:2.22.3
+Requires:	gnome-keyring >= 2.22.3
 Requires:	gnome-media-cd >= 2.22.0
 Requires:	gnome-media-cddb >= 2.22.0
 Requires:	gnome-media-sound-recorder >= 2.22.0
 Requires:	gnome-media-volume-control >= 2.22.0
 Requires:	gnome-media-vumeter >= 2.22.0
-Requires:	gnome-netstatus >= 2.12.0
+Requires:	gnome-netstatus >= 2.12.1
 Requires:	gnome-nettool >= 2.22.0
-Requires:	gnome-power-manager >= 2.22.0
-Requires:	gnome-screensaver >= 2.22.0
-Requires:	gnome-system-monitor >= 2.22.0
+Requires:	gnome-power-manager >= 2.22.1
+Requires:	gnome-screensaver >= 2.22.2
+Requires:	gnome-system-monitor >= 2.22.3
 Requires:	gnome-system-tools >= 2.22.0
-Requires:	gnome-user-docs >= 2.22.0
+Requires:	gnome-user-docs >= 2.22.1
 Requires:	gnome-utils-baobab >= 1:2.20.0.1
 Requires:	gnome-utils-dictionary >= 1:2.20.0.1
 Requires:	gnome-utils-floppy >= 1:2.20.0.1
 Requires:	gnome-utils-logview >= 1:2.20.0.1
 Requires:	gnome-utils-screenshot >= 1:2.20.0.1
 Requires:	gnome-utils-search-tool >= 1:2.20.0.1
-Requires:	gnome-volume-manager >= 2.22.0
+Requires:	gnome-volume-manager >= 2.22.5
 Requires:	gstreamer
 Requires:	gstreamer-GConf
 Requires:	gstreamer-audio-effects-base
@@ -243,27 +243,27 @@ Requires:	gstreamer-visualisation
 Requires:	gstreamer-vorbis
 Requires:	gstreamer-wavpack
 Requires:	gstreamer-ximagesrc
-Requires:	gucharmap >= 2.22.0
-Requires:	nautilus-cd-burner >= 2.22.0
-Requires:	nautilus-extension-evince >= 2.22.0
-Requires:	seahorse >= 2.22.0
+Requires:	gucharmap >= 2.22.3
+Requires:	nautilus-cd-burner >= 2.22.1
+Requires:	nautilus-extension-evince >= 2.22.2
+Requires:	seahorse >= 2.22.3
 Requires:	sound-juicer >= 2.22.0
-Requires:	tomboy >= 0.8.0
-Requires:	totem >= 2.22.0
+Requires:	tomboy >= 0.10.2
+Requires:	totem >= 2.22.2
 Requires:	vinagre >= 0.5.0
-Requires:	vino >= 2.22.0
-Requires:	zenity >= 2.22.0
-Suggests:	evolution-exchange >= 2.22.0
+Requires:	vino >= 2.22.2
+Requires:	zenity >= 2.22.1
+Suggests:	evolution-exchange >= 2.22.3
 Suggests:	evolution-webcal
-Suggests:	gnome-games-servers >= 1:2.22.1.1
-Suggests:	gnome-keyring-pam >= 2.22.0
-Suggests:	gnome-themes-Clearlooks >= 2.22.0
-Suggests:	gnome-themes-ClearlooksClassic >= 2.22.0
-Suggests:	gnome-themes-Crux >= 2.22.0
-Suggests:	gnome-themes-Glider >= 2.22.0
-Suggests:	gnome-themes-Glossy >= 2.22.0
-Suggests:	gnome-themes-Inverted >= 2.22.0
-Suggests:	gnome-themes-Mist >= 2.22.0
+Suggests:	gnome-games-servers >= 1:2.22.3
+Suggests:	gnome-keyring-pam >= 2.22.3
+Suggests:	gnome-themes-Clearlooks >= 2.22.2
+Suggests:	gnome-themes-ClearlooksClassic >= 2.22.2
+Suggests:	gnome-themes-Crux >= 2.22.2
+Suggests:	gnome-themes-Glider >= 2.22.2
+Suggests:	gnome-themes-Glossy >= 2.22.2
+Suggests:	gnome-themes-Inverted >= 2.22.2
+Suggests:	gnome-themes-Mist >= 2.22.2
 
 %description desktop
 GNOME Desktop Environment.
@@ -277,9 +277,9 @@ Summary(pl.UTF-8):	Narzędzia programisty dla środowiska graficznego GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	accerciser >= 1.2.0
-Requires:	anjuta >= 2.4.0
-Requires:	devhelp >= 0.19
-Requires:	glade3 >= 3.4.3
+Requires:	anjuta >= 1:2.4.2
+Requires:	devhelp >= 0.19.1
+Requires:	glade3 >= 3.4.5
 Requires:	gnome-devel-docs >= 2.22.0
 
 %description devtools
@@ -295,8 +295,8 @@ Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	abiword >= 1:2.4.6
 Requires:	dia >= 1:0.96.1
-Requires:	gimp >= 2.4.5
-Requires:	glabels >= 2.1.3
+Requires:	gimp >= 1:2.4.6
+Requires:	glabels >= 2.2.1
 Requires:	gnumeric >= 1:1.8.0
 Requires:	inkscape >= 0.46
 Requires:	planner >= 0.14.2
