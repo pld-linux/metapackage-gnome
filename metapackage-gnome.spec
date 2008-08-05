@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	2.22.3
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -116,13 +116,14 @@ Requires:	gedit2 >= 2.22.3
 Requires:	gnome-control-center >= 1:2.22.2.1
 Requires:	gnome-desktop >= 2.22.3
 Requires:	gnome-icon-theme >= 2.22.0
-Requires:	gnome-menus >= 2.22.2
 Requires:	gnome-panel >= 2.22.2
 Requires:	gnome-session >= 2.22.3
 Requires:	gnome-terminal >= 2.22.3
 Requires:	gtk2-engines >= 1:2.14.3
 Requires:	nautilus >= 2.22.4
+Requires:	xdg-menus
 Requires:	yelp >= 2.22.1
+Suggests:	gnome-menus >= 2.22.2
 Suggests:	metacity >= 2:2.22.0
 
 %description core
