@@ -133,6 +133,8 @@ Requires:	xdg-menus
 Requires:	yelp >= 2.26.0
 Suggests:	gnome-menus >= 2.26.0
 Suggests:	metacity >= 2:2.26.0
+# Just suggest some TTF font
+Suggests:	fonts-TTF-RedHat-liberation
 
 %description core
 The core components of the GNOME Desktop Environment.
