@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	2.26.0
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -154,8 +154,7 @@ Requires:	cheese >= 2.26.0
 Requires:	ekiga >= 2.0.11
 Requires:	empathy >= 2.26.0
 Requires:	epiphany >= 2.26.0
-Requires:	epiphany-extension-seahorse >= 2.26.0
-Requires:	epiphany-extensions >= 2.26.0
+1Requires:	epiphany-extensions >= 2.26.0
 Requires:	evince >= 2.26.0
 Requires:	evolution >= 2.26.0
 Requires:	evolution-addressbook >= 2.26.0
@@ -214,7 +213,6 @@ Requires:	gnome-system-tools >= 2.22.2
 Requires:	gnome-user-docs >= 2.26.0
 Requires:	gnome-utils-baobab >= 1:2.26.0
 Requires:	gnome-utils-dictionary >= 1:2.26.0
-Requires:	gnome-utils-floppy >= 1:2.26.0
 Requires:	gnome-utils-logview >= 1:2.26.0
 Requires:	gnome-utils-screenshot >= 1:2.26.0
 Requires:	gnome-utils-search-tool >= 1:2.26.0
