@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	2.26.0
-Release:	2
+Release:	3
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -147,7 +147,6 @@ Summary:	GNOME Desktop Environment
 Summary(pl.UTF-8):	Środowisko graficzne GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	alacarte >= 0.11.10
 Requires:	brasero >= 2.26.0
 Requires:	bug-buddy >= 2.26.0
 Requires:	cheese >= 2.26.0
@@ -264,6 +263,8 @@ Requires:	totem >= 2.26.0
 Requires:	vinagre >= 2.26.0
 Requires:	vino >= 2.26.0
 Requires:	zenity >= 2.26.0
+# gnome-menus is optional, so has to be alacarte
+Suggests:	alacarte >= 0.11.10
 Suggests:	browser-plugin-totem >= 2.26.0
 Suggests:	evolution-exchange >= 2.26.0
 Suggests:	evolution-mapi >= 0.26.0
