@@ -1,8 +1,8 @@
 Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
-Version:	2.26.0
-Release:	3
+Version:	2.30.0
+Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -14,10 +14,8 @@ Requires:	%{name}-office = %{version}-%{release}
 Requires:	epiphany-extension-gwget >= 1.0.1
 Requires:	gnome-games-extra-data-glines >= 2.26.0
 Requires:	gnome-games-extra-data-gnobots2 >= 2.26.0
-Requires:	gnome-games-extra-data-gnometris >= 2.26.0
 Requires:	gnome-games-extra-data-iagno >= 2.26.0
 Requires:	gnome-games-extra-data-mahjongg >= 2.26.0
-Requires:	gnome-games-extra-data-same-gnome >= 2.26.0
 Requires:	gnome-mount >= 0.8
 Requires:	gnome-themes-extras-Darklooks >= 2.22.0
 Requires:	gnome-themes-extras-Foxtrot >= 2.22.0
@@ -178,29 +176,27 @@ Requires:	gnome-applets-drivemount >= 1:2.26.0
 Requires:	gnome-applets-geyes >= 1:2.26.0
 Requires:	gnome-applets-gweather >= 1:2.26.0
 Requires:	gnome-applets-invest >= 1:2.26.0
-Requires:	gnome-applets-keyboard >= 1:2.26.0
 Requires:	gnome-applets-minicommander >= 1:2.26.0
 Requires:	gnome-applets-mixer >= 1:2.26.0
 Requires:	gnome-applets-multiload >= 1:2.26.0
 Requires:	gnome-applets-stickynotes >= 1:2.26.0
 Requires:	gnome-applets-trash >= 1:2.26.0
 Requires:	gnome-backgrounds >= 2.24.1
-Requires:	gnome-games-blackjack >= 1:2.26.0
 Requires:	gnome-games-glchess >= 1:2.26.0
 Requires:	gnome-games-glines >= 1:2.26.0
 Requires:	gnome-games-gnect >= 1:2.26.0
 Requires:	gnome-games-gnibbles >= 1:2.26.0
 Requires:	gnome-games-gnobots2 >= 1:2.26.0
-Requires:	gnome-games-gnometris >= 1:2.26.0
 Requires:	gnome-games-gnomine >= 1:2.26.0
 Requires:	gnome-games-gnotravex >= 1:2.26.0
 Requires:	gnome-games-gnotski >= 1:2.26.0
 Requires:	gnome-games-gtali >= 1:2.26.0
 Requires:	gnome-games-iagno >= 1:2.26.0
 Requires:	gnome-games-mahjongg >= 1:2.26.0
-Requires:	gnome-games-same-gnome >= 1:2.26.0
+Requires:	gnome-games-quadrapassel >= 1:2.30.0
 Requires:	gnome-games-sol >= 1:2.26.0
 Requires:	gnome-games-sudoku >= 1:2.26.0
+Requires:	gnome-games-swell-foop >= 1:2.30.0
 Requires:	gnome-media-sound-recorder >= 2.26.0
 Requires:	gnome-media-volume-control >= 2.26.0
 Requires:	gnome-netstatus >= 2.26.0
