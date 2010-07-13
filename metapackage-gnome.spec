@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	2.30.1
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -224,7 +224,6 @@ Requires:	gstreamer-audio-effects-base
 Requires:	gstreamer-audio-effects-good
 Requires:	gstreamer-audio-formats
 Requires:	gstreamer-audiosink-alsa
-Requires:	gstreamer-audiosink-esd
 Requires:	gstreamer-audiosink-oss
 Requires:	gstreamer-cairo
 Requires:	gstreamer-cdparanoia
