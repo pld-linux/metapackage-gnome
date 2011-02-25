@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	2.32.0
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -27,7 +27,6 @@ Requires:	gnome-themes-extras-gnome-alternative >= 2.22.0
 Requires:	gstreamer-a52dec
 Requires:	gstreamer-aac
 Requires:	gstreamer-audio-effects-bad
-Requires:	gstreamer-audiosink-alsaspdif
 Requires:	gstreamer-audiosink-nas
 Requires:	gstreamer-cdaudio
 Requires:	gstreamer-dts
