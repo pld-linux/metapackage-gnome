@@ -1,8 +1,8 @@
 Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
-Version:	3.0.0
-Release:	0.1
+Version:	3.0.1
+Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -11,8 +11,8 @@ Requires:	%{name}-core = %{version}-%{release}
 Requires:	%{name}-desktop = %{version}-%{release}
 Requires:	%{name}-devtools = %{version}-%{release}
 Requires:	%{name}-office = %{version}-%{release}
+Requires:	banshee >= 2.0.1
 Requires:	epiphany-extension-gwget >= 1.0.1
-Requires:	gnome-color-manager >= 3.0.0
 Requires:	gnome-games-extra-data-glines >= 3.0.0
 Requires:	gnome-games-extra-data-gnobots2 >= 3.0.0
 Requires:	gnome-games-extra-data-iagno >= 3.0.0
@@ -25,16 +25,29 @@ Requires:	gnome-themes-extras-Unity >= 2.22.0
 Requires:	gnome-themes-extras-gnome-alternative >= 2.22.0
 Requires:	gstreamer-a52dec
 Requires:	gstreamer-aac
+Requires:	gstreamer-amrnb
+Requires:	gstreamer-amrwb
+Requires:	gstreamer-ass
 Requires:	gstreamer-audio-effects-bad
 Requires:	gstreamer-audiosink-nas
 Requires:	gstreamer-cdaudio
+Requires:	gstreamer-cdio
+Requires:	gstreamer-celt
+Requires:	gstreamer-curl
+Requires:	gstreamer-dc1394
+Requires:	gstreamer-dirac
 Requires:	gstreamer-dts
 Requires:	gstreamer-dvdread
+Requires:	gstreamer-flite
+Requires:	gstreamer-gme
+Requires:	gstreamer-gsettings
 Requires:	gstreamer-gsm
-Requires:	gstreamer-jack
+Requires:	gstreamer-kate
 Requires:	gstreamer-ladspa
 Requires:	gstreamer-lame
+Requires:	gstreamer-lv2
 Requires:	gstreamer-mad
+Requires:	gstreamer-mimic
 Requires:	gstreamer-mjpegtools
 Requires:	gstreamer-mms
 Requires:	gstreamer-mpeg
@@ -42,8 +55,13 @@ Requires:	gstreamer-musepack
 Requires:	gstreamer-musicbrainz
 Requires:	gstreamer-mythtv
 Requires:	gstreamer-neon
+Requires:	gstreamer-ofa
+Requires:	gstreamer-opencv
 Requires:	gstreamer-plugins-bad
 Requires:	gstreamer-plugins-ugly
+Requires:	gstreamer-resindvd
+Requires:	gstreamer-rtmp
+Requires:	gstreamer-schroedinger
 Requires:	gstreamer-sid
 Requires:	gstreamer-sndfile
 Requires:	gstreamer-soundtouch
@@ -51,13 +69,15 @@ Requires:	gstreamer-spc
 Requires:	gstreamer-timidity
 Requires:	gstreamer-videosink-directfb
 Requires:	gstreamer-videosink-sdl
+Requires:	gstreamer-vp8
 Requires:	gstreamer-wildmidi
 Requires:	gstreamer-x264
 Requires:	gstreamer-xvid
-Requires:	gvfs
+Requires:	gstreamer-zbar
 Requires:	gwget >= 1.0.1
 Requires:	liferea >= 1.6.3
-Requires:	rhythmbox >= 0.12.8
+Requires:	shotwell
+Suggests:	tracker
 Obsoletes:	metapackage-gnome-extras
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -73,21 +93,14 @@ Summary:	Accessibility packages for GNOME Desktop Environment
 Summary(pl.UTF-8):	Pakiety ułatwień dostępu dla środowiska graficznego GNOME
 Group:		X11/Applications/Accessibility
 Requires:	%{name}-core = %{version}-%{release}
+Requires:	at-spi2-atk >= 2.0.1
+Requires:	at-spi2-core >= 2.0.1
+Requires:	caribou >= 0.2.00
 Requires:	dasher >= 4.11
-Requires:	gnome-applet-colorblind >= 0.16.1
 Requires:	gnome-mag >= 0.16.1
 Requires:	gnome-speech >= 0.4.23
-Requires:	gok >= 2.30.0
-Requires:	mousetweaks >= 2.30.1
-Requires:	orca >= 2.30.1
-Suggests:	gnome-themes-HighContrast >= 2.30.1
-Suggests:	gnome-themes-HighContrast-SVG >= 2.30.1
-Suggests:	gnome-themes-HighContrastInverse >= 2.30.1
-Suggests:	gnome-themes-HighContrastLargePrint >= 2.30.1
-Suggests:	gnome-themes-HighContrastLargePrintInverse >= 2.30.1
-Suggests:	gnome-themes-LargePrint >= 2.30.1
-Suggests:	gnome-themes-LowContrast >= 2.30.1
-Suggests:	gnome-themes-LowContrastLargePrint >= 2.30.1
+Requires:	mousetweaks >= 3.0.1
+Requires:	orca >= 3.0.1
 Provides:	metapackage-gnome-extras-accessibility
 Obsoletes:	metapackage-gnome-extras-accessibility
 
@@ -115,27 +128,31 @@ Pakiety do zarządzania środowiskiem graficznym GNOME.
 Summary:	The core components of the GNOME Desktop Environment
 Summary(pl.UTF-8):	Podstawowe składniki środowiska graficznego GNOME
 Group:		X11/Applications
-Requires:	eog >= 3.0.0
-Requires:	fam
-Requires:	gedit2 >= 3.0.0
-Requires:	gnome-control-center >= 1:3.0.0
-Requires:	gnome-desktop >= 3.0.0
+Requires:	dconf >= 0.7.5
+Requires:	eog >= 3.0.1
+Requires:	gedit2 >= 3.0.2
+Requires:	gnome-control-center >= 1:3.0.1
+Requires:	gnome-desktop >= 3.0.1
 Requires:	gnome-icon-theme >= 3.0.0
-Requires:	gnome-keyring >= 3.0.0
-Requires:	gnome-packagekit >= 3.0.0
+Requires:	gnome-icon-theme-symbolic >= 3.0.0
+Requires:	gnome-keyring >= 3.0.2
 Requires:	gnome-panel >= 3.0.0
-Requires:	gnome-session >= 1:3.0.0
-Requires:	gnome-settings-daemon >= 3.0.0
-Requires:	gnome-terminal >= 3.0.0
-# not fully ported yet
-#Requires:	gtk3-engines >= 3.0.0
-Requires:	nautilus >= 3.0.0
+Requires:	gnome-screensaver >= 3.0.0
+Requires:	gnome-session >= 1:3.0.1
+Requires:	gnome-settings-daemon >= 1:3.0.1
+Requires:	gnome-shell >= 3.0.1
+Requires:	gnome-terminal >= 3.0.1
+Requires:	gnome-themes-standard >= 3.0.1
+Requires:	gsettings-desktop-schemas >= 3.0.1
+Requires:	gvfs >= 1.8.1
+Requires:	mutter >= 3.0.1
+Requires:	nautilus >= 3.0.1.1
 Requires:	xdg-menus
-Requires:	yelp >= 3.0.0
+Requires:	yelp >= 3.0.2
 Suggests:	gnome-menus >= 3.0.0
-Suggests:	metacity >= 2:2.30.1
-# Just suggest some TTF font
-Suggests:	fonts-TTF-RedHat-liberation
+Suggests:	metacity >= 2:2.34.0
+# Default GNOME font
+Suggests:	fonts-OTF-Cantarell
 
 %description core
 The core components of the GNOME Desktop Environment.
@@ -150,79 +167,61 @@ Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	brasero >= 3.0.0
 Requires:	bug-buddy >= 2.32.0
-Requires:	cheese >= 3.0.0
+Requires:	cheese >= 3.0.1
+Requires:	dconf-editor >= 0.7.5
 Requires:	ekiga >= 3.2.7
-Requires:	empathy >= 3.0.0
-# not fully ported yet
-#Requires:	eog-plugins >= 3.0.0
-Requires:	epiphany >= 3.0.0
+Requires:	empathy >= 3.0.1
+Requires:	eog-plugins >= 3.0.0
+Requires:	epiphany >= 3.0.3
 Requires:	epiphany-extensions >= 3.0.0
 Requires:	evince >= 3.0.0
-Requires:	evolution >= 3.0.0
-Requires:	evolution-addressbook >= 3.0.0
-Requires:	evolution-calendar >= 3.0.0
-Requires:	evolution-mail >= 3.0.0
-Requires:	file-roller >= 3.0.0
+Requires:	evolution >= 3.0.1
+Requires:	evolution-addressbook >= 3.0.1
+Requires:	evolution-calendar >= 3.0.1
+Requires:	evolution-mail >= 3.0.1
+Requires:	file-roller >= 3.0.1
 Requires:	gcalctool >= 6.0.0
 Requires:	gconf-editor >= 3.0.0
 Requires:	gdm >= 2:3.0.0
-# not fully ported yet
-#Requires:	gdm-user-switch-applet >= 2:2.32.0
-#Requires:	gedit-plugin-seahorse >= 2.30.1
-Requires:	gedit-plugins >= 3.0.0
-Requires:	gnome-applet-deskbar >= 2.32.0
-# not fully ported yet
-#Requires:	gnome-applet-hamster >= 2.30.1
-#Requires:	gnome-applet-seahorse >= 2.30.1
-#Requires:	gnome-applets-accessx-status >= 1:2.32.0
-#Requires:	gnome-applets-battstat >= 1:2.32.0
-#Requires:	gnome-applets-charpicker >= 1:2.32.0
-#Requires:	gnome-applets-cpufreq >= 1:2.32.0
-#Requires:	gnome-applets-drivemount >= 1:2.32.0
-#Requires:	gnome-applets-geyes >= 1:2.32.0
-#Requires:	gnome-applets-gweather >= 1:2.32.0
-#Requires:	gnome-applets-invest >= 1:2.32.0
-#Requires:	gnome-applets-minicommander >= 1:2.32.0
-#Requires:	gnome-applets-mixer >= 1:2.32.0
-#Requires:	gnome-applets-multiload >= 1:2.32.0
-#Requires:	gnome-applets-stickynotes >= 1:2.32.0
-#Requires:	gnome-applets-trash >= 1:2.32.0
-Requires:	gnome-backgrounds >= 3.0.0
+Requires:	gedit-plugins >= 3.0.2
+Requires:	gnome-backgrounds >= 3.0.1
 Requires:	gnome-bluetooth >= 3.0.0
+Requires:	gnome-color-manager >= 3.0.0
 Requires:	gnome-disk-utility >= 3.0.0
-Requires:	gnome-games-glchess >= 1:3.0.0
-Requires:	gnome-games-glines >= 1:3.0.0
-Requires:	gnome-games-gnect >= 1:3.0.0
-Requires:	gnome-games-gnibbles >= 1:3.0.0
-Requires:	gnome-games-gnobots2 >= 1:3.0.0
-Requires:	gnome-games-gnomine >= 1:3.0.0
-Requires:	gnome-games-gnotravex >= 1:3.0.0
-Requires:	gnome-games-gnotski >= 1:3.0.0
-Requires:	gnome-games-gtali >= 1:3.0.0
-Requires:	gnome-games-iagno >= 1:3.0.0
-Requires:	gnome-games-lightsoff >= 1:3.0.0
-Requires:	gnome-games-mahjongg >= 1:3.0.0
-Requires:	gnome-games-quadrapassel >= 1:3.0.0
-Requires:	gnome-games-sol >= 1:3.0.0
-Requires:	gnome-games-sudoku >= 1:3.0.0
-Requires:	gnome-games-swell-foop >= 1:3.0.0
+Requires:	gnome-games-glchess >= 1:3.0.1.1
+Requires:	gnome-games-glines >= 1:3.0.1.1
+Requires:	gnome-games-gnect >= 1:3.0.1.1
+Requires:	gnome-games-gnibbles >= 1:3.0.1.1
+Requires:	gnome-games-gnobots2 >= 1:3.0.1.1
+Requires:	gnome-games-gnomine >= 1:3.0.1.1
+Requires:	gnome-games-gnotravex >= 1:3.0.1.1
+Requires:	gnome-games-gnotski >= 1:3.0.1.1
+Requires:	gnome-games-gtali >= 1:3.0.1.1
+Requires:	gnome-games-iagno >= 1:3.0.1.1
+Requires:	gnome-games-lightsoff >= 1:3.0.1.1
+Requires:	gnome-games-mahjongg >= 1:3.0.1.1
+Requires:	gnome-games-quadrapassel >= 1:3.0.1.1
+Requires:	gnome-games-sol >= 1:3.0.1.1
+Requires:	gnome-games-sudoku >= 1:3.0.1.1
+Requires:	gnome-games-swell-foop >= 1:3.0.1.1
 Requires:	gnome-icon-theme-extras >= 3.0.0
+Requires:	gnome-packagekit >= 3.0.0
 # not fully ported yet
 #Requires:	gnome-media-sound-recorder >= 2.30.0
 #Requires:	gnome-media-volume-control >= 2.30.0
 #Requires:	gnome-netstatus >= 3.0.0
 Requires:	gnome-nettool >= 3.0.0
 Requires:	gnome-power-manager >= 3.0.0
-Requires:	gnome-screensaver >= 3.0.0
-# not fully ported yet
-#Requires:	gnome-system-monitor >= 2.28.0
+Requires:	gnome-system-monitor >= 3.0.0
 Requires:	gnome-system-tools >= 3.0.0
+Requires:	gnome-tweak-tool
 Requires:	gnome-user-docs >= 3.0.0
-Requires:	gnome-utils-baobab >= 1:3.0.0
-Requires:	gnome-utils-dictionary >= 1:3.0.0
-Requires:	gnome-utils-logview >= 1:3.0.0
-Requires:	gnome-utils-screenshot >= 1:3.0.0
-Requires:	gnome-utils-search-tool >= 1:3.0.0
+Requires:	gnome-utils-baobab >= 1:3.0.1
+Requires:	gnome-utils-dictionary >= 1:3.0.1
+Requires:	gnome-utils-font-viewer >= 1:3.0.1
+Requires:	gnome-utils-logview >= 1:3.0.1
+Requires:	gnome-utils-screenshot >= 1:3.0.1
+Requires:	gnome-utils-search-tool >= 1:3.0.1
 Requires:	gstreamer
 Requires:	gstreamer-GConf
 Requires:	gstreamer-audio-effects-base
@@ -239,6 +238,7 @@ Requires:	gstreamer-gnomevfs
 Requires:	gstreamer-hal
 Requires:	gstreamer-imagesink-x
 Requires:	gstreamer-imagesink-xv
+Requires:	gstreamer-jack
 Requires:	gstreamer-libpng
 Requires:	gstreamer-libvisual
 Requires:	gstreamer-pango
@@ -251,6 +251,7 @@ Requires:	gstreamer-soup
 Requires:	gstreamer-speex
 Requires:	gstreamer-taglib
 Requires:	gstreamer-theora
+Requires:	gstreamer-v4l2
 Requires:	gstreamer-video-effects
 Requires:	gstreamer-videosink-aa
 Requires:	gstreamer-videosink-libcaca
@@ -258,14 +259,14 @@ Requires:	gstreamer-visualisation
 Requires:	gstreamer-vorbis
 Requires:	gstreamer-wavpack
 Requires:	gstreamer-ximagesrc
-Requires:	gucharmap >= 3.0.0
+Requires:	gucharmap >= 3.0.1
 Requires:	nautilus-extension-brasero >= 3.0.0
 Requires:	nautilus-extension-evince >= 3.0.0
 # not fully ported yet
 #Requires:	nautilus-extension-seahorse >= 2.30.1
 Requires:	nautilus-sendto >= 3.0.0
 Requires:	nautilus-sendto-cd-burner >= 3.0.0
-Requires:	nautilus-sendto-empathy >= 3.0.0
+Requires:	nautilus-sendto-empathy >= 3.0.1
 Requires:	nautilus-sendto-evolution >= 3.0.0
 Requires:	nautilus-sendto-gnome-bluetooth >= 3.0.0
 Requires:	nautilus-sendto-upnp >= 3.0.0
@@ -273,18 +274,26 @@ Requires:	seahorse >= 3.0.0
 # not fully ported yet
 #Requires:	seahorse-plugins >= 2.30.1
 Requires:	sound-juicer >= 2.28.2
-Requires:	swfdec-gnome >= 2.30.0
 Requires:	tomboy >= 1.4.0
-Requires:	totem >= 3.0.0
+Requires:	totem >= 3.0.1
+Requires:	totem-gromit >= 3.0.1
+Requires:	totem-im-status >= 3.0.1
+Requires:	totem-iplayer >= 3.0.1
+Requires:	totem-jamendo >= 3.0.1
+Requires:	totem-lirc >= 3.0.1
+Requires:	totem-opensubtitles >= 3.0.1
+Requires:	totem-publish >= 3.0.1
+Requires:	totem-tracker >= 3.0.1
+Requires:	totem-youtube >= 3.0.1
 Requires:	vinagre >= 3.0.0
-Requires:	vino >= 3.0.0
+Requires:	vino >= 3.0.2
 Requires:	zenity >= 3.0.0
 # gnome-menus is optional, so has to be alacarte
 Suggests:	alacarte >= 0.13.1
 Suggests:	browser-plugin-totem >= 3.0.0
-Suggests:	evolution-exchange >= 3.0.0
+Suggests:	evolution-exchange >= 3.0.1
 Suggests:	evolution-webcal >= 2.32.0
-Suggests:	gnome-keyring-pam >= 3.0.0
+Suggests:	pam-pam_gnome_keyring >= 3.0.2
 # not fully ported yet
 #Suggests:	gnome-themes-Clearlooks >= 2.32.0
 #Suggests:	gnome-themes-ClearlooksClassic >= 2.32.0
@@ -310,7 +319,7 @@ Requires:	anjuta >= 1:3.0.0
 # not fully ported yet
 #Requires:	anjuta-extras >= 2.30.1.0
 Requires:	devhelp >= 3.0.0
-Requires:	glade3 >= 3.6.7
+Requires:	glade >= 3.10.0
 Requires:	gnome-devel-docs >= 3.0.0
 
 %description devtools
