@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	3.0.1
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -10,13 +10,10 @@ Requires:	%{name}-admin = %{version}-%{release}
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	%{name}-desktop = %{version}-%{release}
 Requires:	%{name}-devtools = %{version}-%{release}
+Requires:	%{name}-games = %{version}-%{release}
 Requires:	%{name}-office = %{version}-%{release}
 Requires:	banshee >= 2.0.1
 Requires:	epiphany-extension-gwget >= 1.0.1
-Requires:	gnome-games-extra-data-glines >= 3.0.0
-Requires:	gnome-games-extra-data-gnobots2 >= 3.0.0
-Requires:	gnome-games-extra-data-iagno >= 3.0.0
-Requires:	gnome-games-extra-data-mahjongg >= 3.0.0
 Requires:	gnome-themes-extras-Darklooks >= 2.22.0
 Requires:	gnome-themes-extras-Foxtrot >= 2.22.0
 Requires:	gnome-themes-extras-Gion >= 2.22.0
@@ -188,24 +185,9 @@ Requires:	gnome-backgrounds >= 3.0.1
 Requires:	gnome-bluetooth >= 3.0.0
 Requires:	gnome-color-manager >= 3.0.0
 Requires:	gnome-disk-utility >= 3.0.0
-Requires:	gnome-games-glchess >= 1:3.0.1.1
-Requires:	gnome-games-glines >= 1:3.0.1.1
-Requires:	gnome-games-gnect >= 1:3.0.1.1
-Requires:	gnome-games-gnibbles >= 1:3.0.1.1
-Requires:	gnome-games-gnobots2 >= 1:3.0.1.1
-Requires:	gnome-games-gnomine >= 1:3.0.1.1
-Requires:	gnome-games-gnotravex >= 1:3.0.1.1
-Requires:	gnome-games-gnotski >= 1:3.0.1.1
-Requires:	gnome-games-gtali >= 1:3.0.1.1
-Requires:	gnome-games-iagno >= 1:3.0.1.1
-Requires:	gnome-games-lightsoff >= 1:3.0.1.1
-Requires:	gnome-games-mahjongg >= 1:3.0.1.1
-Requires:	gnome-games-quadrapassel >= 1:3.0.1.1
-Requires:	gnome-games-sol >= 1:3.0.1.1
-Requires:	gnome-games-sudoku >= 1:3.0.1.1
-Requires:	gnome-games-swell-foop >= 1:3.0.1.1
 Requires:	gnome-icon-theme-extras >= 3.0.0
 Requires:	gnome-packagekit >= 3.0.0
+Suggests:	%{name}-games = %{version}-%{release}
 # not fully ported yet
 #Requires:	gnome-media-sound-recorder >= 2.30.0
 #Requires:	gnome-media-volume-control >= 2.30.0
@@ -328,6 +310,34 @@ Developer tools for GNOME Desktop Environment.
 %description devtools -l pl.UTF-8
 Narzędzia programisty dla środowiska graficznego GNOME.
 
+%package games
+Summary:	Games for GNOME Desktop Environment
+Group:		X11/Applications
+Requires:	%{name}-core = %{version}-%{release}
+Requires:	gnome-games-extra-data-glines >= 3.0.0
+Requires:	gnome-games-extra-data-gnobots2 >= 3.0.0
+Requires:	gnome-games-extra-data-iagno >= 3.0.0
+Requires:	gnome-games-extra-data-mahjongg >= 3.0.0
+Requires:	gnome-games-glchess >= 1:3.0.1.1
+Requires:	gnome-games-glines >= 1:3.0.1.1
+Requires:	gnome-games-gnect >= 1:3.0.1.1
+Requires:	gnome-games-gnibbles >= 1:3.0.1.1
+Requires:	gnome-games-gnobots2 >= 1:3.0.1.1
+Requires:	gnome-games-gnomine >= 1:3.0.1.1
+Requires:	gnome-games-gnotravex >= 1:3.0.1.1
+Requires:	gnome-games-gnotski >= 1:3.0.1.1
+Requires:	gnome-games-gtali >= 1:3.0.1.1
+Requires:	gnome-games-iagno >= 1:3.0.1.1
+Requires:	gnome-games-lightsoff >= 1:3.0.1.1
+Requires:	gnome-games-mahjongg >= 1:3.0.1.1
+Requires:	gnome-games-quadrapassel >= 1:3.0.1.1
+Requires:	gnome-games-sol >= 1:3.0.1.1
+Requires:	gnome-games-sudoku >= 1:3.0.1.1
+Requires:	gnome-games-swell-foop >= 1:3.0.1.1
+
+%description games
+Games for GNOME Desktop Environment.
+
 %package office
 Summary:	Office suite for GNOME Desktop Environment
 Summary(pl.UTF-8):	Pakiety biurowe dla środowiska graficznego GNOME
@@ -368,6 +378,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 
 %files devtools
+%defattr(644,root,root,755)
+
+%files games
 %defattr(644,root,root,755)
 
 %files office
