@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	3.0.1
-Release:	2
+Release:	3
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -217,7 +217,6 @@ Requires:	gstreamer-dv
 Requires:	gstreamer-flac
 Requires:	gstreamer-gdkpixbuf
 Requires:	gstreamer-gnomevfs
-Requires:	gstreamer-hal
 Requires:	gstreamer-imagesink-x
 Requires:	gstreamer-imagesink-xv
 Requires:	gstreamer-jack
