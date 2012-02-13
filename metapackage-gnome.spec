@@ -1,8 +1,8 @@
 Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
-Version:	3.0.1
-Release:	4
+Version:	3.2.2
+Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -96,8 +96,8 @@ Requires:	caribou >= 0.2.00
 Requires:	dasher >= 4.11
 Requires:	gnome-mag >= 0.16.1
 Requires:	gnome-speech >= 0.4.23
-Requires:	mousetweaks >= 3.0.1
-Requires:	orca >= 3.0.1
+Requires:	mousetweaks >= 3.2.1
+Requires:	orca >= 3.2.2
 Provides:	metapackage-gnome-extras-accessibility
 Obsoletes:	metapackage-gnome-extras-accessibility
 
@@ -112,8 +112,8 @@ Summary:	Administration packages for GNOME Desktop Environment
 Summary(pl.UTF-8):	Pakiety do zarządzania środowiskiem graficznym GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	pessulus >= 2.30.0
-Requires:	sabayon >= 2.22.1
+Requires:	pessulus >= 2.30.4
+Requires:	sabayon >= 2.30.1
 
 %description admin
 Administration packages for GNOME Desktop Environment.
@@ -126,28 +126,28 @@ Summary:	The core components of the GNOME Desktop Environment
 Summary(pl.UTF-8):	Podstawowe składniki środowiska graficznego GNOME
 Group:		X11/Applications
 Requires:	dconf >= 0.7.5
-Requires:	eog >= 3.0.1
-Requires:	gedit2 >= 3.0.2
-Requires:	gnome-control-center >= 1:3.0.1
-Requires:	gnome-desktop >= 3.0.1
-Requires:	gnome-icon-theme >= 3.0.0
-Requires:	gnome-icon-theme-symbolic >= 3.0.0
-Requires:	gnome-keyring >= 3.0.2
-Requires:	gnome-panel >= 3.0.0
-Requires:	gnome-screensaver >= 3.0.0
-Requires:	gnome-session >= 1:3.0.1
-Requires:	gnome-settings-daemon >= 1:3.0.1
-Requires:	gnome-shell >= 3.0.1
-Requires:	gnome-terminal >= 3.0.1
-Requires:	gnome-themes-standard >= 3.0.1
-Requires:	gsettings-desktop-schemas >= 3.0.1
+Requires:	eog >= 3.2.2
+Requires:	gedit2 >= 3.2.6
+Requires:	gnome-control-center >= 1:3.2.2
+Requires:	gnome-desktop >= 3.2.1
+Requires:	gnome-icon-theme >= 3.2.1
+Requires:	gnome-icon-theme-symbolic >= 3.2.2
+Requires:	gnome-keyring >= 3.2.2
+Requires:	gnome-panel >= 3.2.1
+Requires:	gnome-screensaver >= 3.2.1
+Requires:	gnome-session >= 1:3.2.1
+Requires:	gnome-settings-daemon >= 1:3.2.2
+Requires:	gnome-shell >= 3.2.2
+Requires:	gnome-terminal >= 3.2.1
+Requires:	gnome-themes-standard >= 3.2.1
+Requires:	gsettings-desktop-schemas >= 3.2.0
 Requires:	gvfs >= 1.8.1
-Requires:	mutter >= 3.0.1
-Requires:	nautilus >= 3.0.1.1
+Requires:	mutter >= 3.2.2
+Requires:	nautilus >= 3.2.1
 Requires:	xdg-menus
-Requires:	yelp >= 3.0.2
-Suggests:	gnome-menus >= 3.0.0
-Suggests:	metacity >= 2:2.34.0
+Requires:	yelp >= 3.2.1
+Suggests:	gnome-menus >= 3.2.0
+Suggests:	metacity >= 2:2.34.1
 # Default GNOME font
 Suggests:	fonts-OTF-Cantarell
 
@@ -162,48 +162,48 @@ Summary:	GNOME Desktop Environment
 Summary(pl.UTF-8):	Środowisko graficzne GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	brasero >= 3.0.0
+Requires:	brasero >= 3.2.0
 Requires:	bug-buddy >= 2.32.0
-Requires:	cheese >= 3.0.1
+Requires:	cheese >= 3.2.2
 Requires:	dconf-editor >= 0.7.5
 Requires:	ekiga >= 3.2.7
-Requires:	empathy >= 3.0.1
-Requires:	eog-plugins >= 3.0.0
-Requires:	epiphany >= 3.0.3
-Requires:	epiphany-extensions >= 3.0.0
-Requires:	evince >= 3.0.0
-Requires:	evolution >= 3.0.1
-Requires:	evolution-addressbook >= 3.0.1
-Requires:	evolution-calendar >= 3.0.1
-Requires:	evolution-mail >= 3.0.1
-Requires:	file-roller >= 3.0.1
+Requires:	empathy >= 3.2.2
+Requires:	eog-plugins >= 3.2.2
+Requires:	epiphany >= 3.2.1
+Requires:	epiphany-extensions >= 3.2.0
+Requires:	evince >= 3.2.1
+Requires:	evolution >= 3.2.3
+Requires:	evolution-addressbook >= 3.2.3
+Requires:	evolution-calendar >= 3.2.3
+Requires:	evolution-mail >= 3.2.3
+Requires:	file-roller >= 3.2.2
 Requires:	gcalctool >= 6.0.0
-Requires:	gconf-editor >= 3.0.0
-Requires:	gdm >= 2:3.0.0
-Requires:	gedit-plugins >= 3.0.2
-Requires:	gnome-backgrounds >= 3.0.1
-Requires:	gnome-bluetooth >= 3.0.0
-Requires:	gnome-color-manager >= 3.0.0
-Requires:	gnome-disk-utility >= 3.0.0
+Requires:	gconf-editor >= 3.0.1
+Requires:	gdm >= 2:3.2.1
+Requires:	gedit-plugins >= 3.2.1
+Requires:	gnome-backgrounds >= 3.2.0
+Requires:	gnome-bluetooth >= 3.2.2
+Requires:	gnome-color-manager >= 3.2.2
+Requires:	gnome-disk-utility >= 3.0.2
 Requires:	gnome-icon-theme-extras >= 3.0.0
-Requires:	gnome-packagekit >= 3.0.0
+Requires:	gnome-packagekit >= 3.2.1
 Suggests:	%{name}-games = %{version}-%{release}
 # not fully ported yet
 #Requires:	gnome-media-sound-recorder >= 2.30.0
 #Requires:	gnome-media-volume-control >= 2.30.0
 #Requires:	gnome-netstatus >= 3.0.0
-Requires:	gnome-nettool >= 3.0.0
-Requires:	gnome-power-manager >= 3.0.0
-Requires:	gnome-system-monitor >= 3.0.0
+Requires:	gnome-nettool >= 3.0.1
+Requires:	gnome-power-manager >= 3.2.1
+Requires:	gnome-system-monitor >= 3.2.1
 Requires:	gnome-system-tools >= 3.0.0
 Requires:	gnome-tweak-tool
-Requires:	gnome-user-docs >= 3.0.0
-Requires:	gnome-utils-baobab >= 1:3.0.1
-Requires:	gnome-utils-dictionary >= 1:3.0.1
-Requires:	gnome-utils-font-viewer >= 1:3.0.1
-Requires:	gnome-utils-logview >= 1:3.0.1
-Requires:	gnome-utils-screenshot >= 1:3.0.1
-Requires:	gnome-utils-search-tool >= 1:3.0.1
+Requires:	gnome-user-docs >= 3.2.2
+Requires:	gnome-utils-baobab >= 1:3.2.1
+Requires:	gnome-utils-dictionary >= 1:3.2.1
+Requires:	gnome-utils-font-viewer >= 1:3.2.1
+Requires:	gnome-utils-logview >= 1:3.2.1
+Requires:	gnome-utils-screenshot >= 1:3.2.1
+Requires:	gnome-utils-search-tool >= 1:3.2.1
 Requires:	grilo-plugins
 Requires:	gstreamer
 Requires:	gstreamer-GConf
@@ -241,39 +241,39 @@ Requires:	gstreamer-visualisation
 Requires:	gstreamer-vorbis
 Requires:	gstreamer-wavpack
 Requires:	gstreamer-ximagesrc
-Requires:	gucharmap >= 3.0.1
-Requires:	nautilus-extension-brasero >= 3.0.0
-Requires:	nautilus-extension-evince >= 3.0.0
+Requires:	gucharmap >= 3.2.2
+Requires:	nautilus-extension-brasero >= 3.2.0
+Requires:	nautilus-extension-evince >= 3.2.1
 # not fully ported yet
 #Requires:	nautilus-extension-seahorse >= 2.30.1
 Requires:	nautilus-sendto >= 3.0.0
 Requires:	nautilus-sendto-cd-burner >= 3.0.0
-Requires:	nautilus-sendto-empathy >= 3.0.1
+Requires:	nautilus-sendto-empathy >= 3.2.2
 Requires:	nautilus-sendto-evolution >= 3.0.0
-Requires:	nautilus-sendto-gnome-bluetooth >= 3.0.0
+Requires:	nautilus-sendto-gnome-bluetooth >= 3.2.2
 Requires:	nautilus-sendto-upnp >= 3.0.0
-Requires:	seahorse >= 3.0.0
+Requires:	seahorse >= 3.2.2
 # not fully ported yet
 #Requires:	seahorse-plugins >= 2.30.1
-Requires:	sound-juicer >= 2.28.2
+Requires:	sound-juicer >= 2.32.0
 Requires:	tomboy >= 1.4.0
-Requires:	totem >= 3.0.1
-Requires:	totem-gromit >= 3.0.1
-Requires:	totem-im-status >= 3.0.1
-Requires:	totem-iplayer >= 3.0.1
-Requires:	totem-lirc >= 3.0.1
-Requires:	totem-opensubtitles >= 3.0.1
-Requires:	totem-publish >= 3.0.1
-Requires:	totem-youtube >= 3.0.1
-Requires:	vinagre >= 3.0.0
-Requires:	vino >= 3.0.2
-Requires:	zenity >= 3.0.0
+Requires:	totem >= 3.2.1
+Requires:	totem-gromit >= 3.2.1
+Requires:	totem-im-status >= 3.2.1
+Requires:	totem-iplayer >= 3.2.1
+Requires:	totem-lirc >= 3.2.1
+Requires:	totem-opensubtitles >= 3.2.1
+Requires:	totem-publish >= 3.2.1
+Requires:	totem-youtube >= 3.2.1
+Requires:	vinagre >= 3.2.2
+Requires:	vino >= 3.2.2
+Requires:	zenity >= 3.2.0
 # gnome-menus is optional, so has to be alacarte
 Suggests:	alacarte >= 0.13.1
-Suggests:	browser-plugin-totem >= 3.0.0
-Suggests:	evolution-exchange >= 3.0.1
+Suggests:	browser-plugin-totem >= 3.2.1
+Suggests:	evolution-exchange >= 3.2.3
 Suggests:	evolution-webcal >= 2.32.0
-Suggests:	pam-pam_gnome_keyring >= 3.0.2
+Suggests:	pam-pam_gnome_keyring >= 3.2.2
 # not fully ported yet
 #Suggests:	gnome-themes-Clearlooks >= 2.32.0
 #Suggests:	gnome-themes-ClearlooksClassic >= 2.32.0
@@ -295,12 +295,12 @@ Summary(pl.UTF-8):	Narzędzia programisty dla środowiska graficznego GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	accerciser >= 1.10.1
-Requires:	anjuta >= 1:3.0.0
+Requires:	anjuta >= 1:3.2.2
 # not fully ported yet
 #Requires:	anjuta-extras >= 2.30.1.0
-Requires:	devhelp >= 3.0.0
+Requires:	devhelp >= 3.2.0
 Requires:	glade >= 3.10.0
-Requires:	gnome-devel-docs >= 3.0.0
+Requires:	gnome-devel-docs >= 3.2.1
 
 %description devtools
 Developer tools for GNOME Desktop Environment.
@@ -313,25 +313,25 @@ Summary:	Games for GNOME Desktop Environment
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	aisleriot
-Requires:	gnome-games-extra-data-glines >= 3.0.0
-Requires:	gnome-games-extra-data-gnobots2 >= 3.0.0
-Requires:	gnome-games-extra-data-iagno >= 3.0.0
-Requires:	gnome-games-extra-data-mahjongg >= 3.0.0
-Requires:	gnome-games-glchess >= 1:3.0.1.1
-Requires:	gnome-games-glines >= 1:3.0.1.1
-Requires:	gnome-games-gnect >= 1:3.0.1.1
-Requires:	gnome-games-gnibbles >= 1:3.0.1.1
-Requires:	gnome-games-gnobots2 >= 1:3.0.1.1
-Requires:	gnome-games-gnomine >= 1:3.0.1.1
-Requires:	gnome-games-gnotravex >= 1:3.0.1.1
-Requires:	gnome-games-gnotski >= 1:3.0.1.1
-Requires:	gnome-games-gtali >= 1:3.0.1.1
-Requires:	gnome-games-iagno >= 1:3.0.1.1
-Requires:	gnome-games-lightsoff >= 1:3.0.1.1
-Requires:	gnome-games-mahjongg >= 1:3.0.1.1
-Requires:	gnome-games-quadrapassel >= 1:3.0.1.1
-Requires:	gnome-games-sudoku >= 1:3.0.1.1
-Requires:	gnome-games-swell-foop >= 1:3.0.1.1
+Requires:	gnome-games-extra-data-glines >= 3.2.0
+Requires:	gnome-games-extra-data-gnobots2 >= 3.2.0
+Requires:	gnome-games-extra-data-iagno >= 3.2.0
+Requires:	gnome-games-extra-data-mahjongg >= 3.2.0
+Requires:	gnome-games-glchess >= 1:3.2.1
+Requires:	gnome-games-glines >= 1:3.2.1
+Requires:	gnome-games-gnect >= 1:3.2.1
+Requires:	gnome-games-gnibbles >= 1:3.2.1
+Requires:	gnome-games-gnobots2 >= 1:3.2.1
+Requires:	gnome-games-gnomine >= 1:3.2.1
+Requires:	gnome-games-gnotravex >= 1:3.2.1
+Requires:	gnome-games-gnotski >= 1:3.2.1
+Requires:	gnome-games-gtali >= 1:3.2.1
+Requires:	gnome-games-iagno >= 1:3.2.1
+Requires:	gnome-games-lightsoff >= 1:3.2.1
+Requires:	gnome-games-mahjongg >= 1:3.2.1
+Requires:	gnome-games-quadrapassel >= 1:3.2.1
+Requires:	gnome-games-sudoku >= 1:3.2.1
+Requires:	gnome-games-swell-foop >= 1:3.2.1
 
 %description games
 Games for GNOME Desktop Environment.
