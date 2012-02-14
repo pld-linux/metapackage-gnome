@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	3.2.2
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -73,7 +73,8 @@ Requires:	gstreamer-xvid
 Requires:	gstreamer-zbar
 Requires:	gwget >= 1.0.1
 Requires:	liferea >= 1.6.3
-Requires:	shotwell
+# shotwell needs vala-0.14 support
+#Requires:	shotwell
 Suggests:	tracker
 Obsoletes:	metapackage-gnome-extras
 BuildArch:	noarch
