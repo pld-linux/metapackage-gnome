@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	3.2.2
-Release:	2
+Release:	3
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -126,6 +126,7 @@ Pakiety do zarządzania środowiskiem graficznym GNOME.
 Summary:	The core components of the GNOME Desktop Environment
 Summary(pl.UTF-8):	Podstawowe składniki środowiska graficznego GNOME
 Group:		X11/Applications
+Requires:	PackageKit-gtk3-module
 Requires:	dconf >= 0.7.5
 Requires:	eog >= 3.2.2
 Requires:	gedit2 >= 3.2.6
@@ -275,14 +276,13 @@ Suggests:	browser-plugin-totem >= 3.2.1
 Suggests:	evolution-exchange >= 3.2.3
 Suggests:	evolution-webcal >= 2.32.0
 Suggests:	pam-pam_gnome_keyring >= 3.2.2
-# not fully ported yet
-#Suggests:	gnome-themes-Clearlooks >= 2.32.0
-#Suggests:	gnome-themes-ClearlooksClassic >= 2.32.0
-#Suggests:	gnome-themes-Crux >= 2.32.0
-#Suggests:	gnome-themes-Glider >= 2.32.0
-#Suggests:	gnome-themes-Glossy >= 2.32.0
-#Suggests:	gnome-themes-Inverted >= 2.32.0
-#Suggests:	gnome-themes-Mist >= 2.32.0
+Suggests:	gnome-themes-Clearlooks >= 3.0.0
+Suggests:	gnome-themes-ClearlooksClassic >= 3.0.0
+Suggests:	gnome-themes-Crux >= 3.0.0
+Suggests:	gnome-themes-Glider >= 3.0.0
+Suggests:	gnome-themes-Glossy >= 3.0.0
+Suggests:	gnome-themes-Inverted >= 3.0.0
+Suggests:	gnome-themes-Mist >= 3.0.0
 
 %description desktop
 GNOME Desktop Environment.
