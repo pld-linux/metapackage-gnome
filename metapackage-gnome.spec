@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	3.2.2
-Release:	3
+Release:	4
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -270,8 +270,9 @@ Requires:	totem-youtube >= 3.2.1
 Requires:	vinagre >= 3.2.2
 Requires:	vino >= 3.2.2
 Requires:	zenity >= 3.2.0
+# alacarte is not fully ported yest
 # gnome-menus is optional, so has to be alacarte
-Suggests:	alacarte >= 0.13.1
+#Suggests:	alacarte >= 0.13.1
 Suggests:	browser-plugin-totem >= 3.2.1
 Suggests:	evolution-exchange >= 3.2.3
 Suggests:	evolution-webcal >= 2.32.0
