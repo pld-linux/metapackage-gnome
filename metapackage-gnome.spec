@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	3.2.2
-Release:	4
+Release:	5
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -129,7 +129,7 @@ Group:		X11/Applications
 Requires:	PackageKit-gtk3-module
 Requires:	dconf >= 0.7.5
 Requires:	eog >= 3.2.2
-Requires:	gedit2 >= 3.2.6
+Requires:	gedit >= 3.2.6
 Requires:	gnome-control-center >= 1:3.2.2
 Requires:	gnome-desktop >= 3.2.1
 Requires:	gnome-icon-theme >= 3.2.1
