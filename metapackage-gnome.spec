@@ -1,8 +1,8 @@
 Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
-Version:	3.2.2
-Release:	5
+Version:	3.4.0
+Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -95,7 +95,7 @@ Requires:	at-spi2-atk >= 2.0.1
 Requires:	at-spi2-core >= 2.0.1
 Requires:	caribou >= 0.2.00
 Requires:	dasher >= 4.11
-Requires:	gnome-mag >= 0.16.1
+#Requires:	gnome-mag >= 0.16.1
 Requires:	gnome-speech >= 0.4.23
 Requires:	mousetweaks >= 3.2.1
 Requires:	orca >= 3.2.2
@@ -206,7 +206,7 @@ Requires:	gnome-utils-font-viewer >= 1:3.2.1
 Requires:	gnome-utils-logview >= 1:3.2.1
 Requires:	gnome-utils-screenshot >= 1:3.2.1
 Requires:	gnome-utils-search-tool >= 1:3.2.1
-Requires:	grilo-plugins
+#Requires:	grilo-plugins
 Requires:	gstreamer
 Requires:	gstreamer-GConf
 Requires:	gstreamer-audio-effects-base
@@ -266,7 +266,7 @@ Requires:	totem-iplayer >= 3.2.1
 Requires:	totem-lirc >= 3.2.1
 Requires:	totem-opensubtitles >= 3.2.1
 Requires:	totem-publish >= 3.2.1
-Requires:	totem-youtube >= 3.2.1
+#Requires:	totem-youtube >= 3.2.1
 Requires:	vinagre >= 3.2.2
 Requires:	vino >= 3.2.2
 Requires:	zenity >= 3.2.0
@@ -315,10 +315,10 @@ Summary:	Games for GNOME Desktop Environment
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	aisleriot
-Requires:	gnome-games-extra-data-glines >= 3.2.0
-Requires:	gnome-games-extra-data-gnobots2 >= 3.2.0
-Requires:	gnome-games-extra-data-iagno >= 3.2.0
-Requires:	gnome-games-extra-data-mahjongg >= 3.2.0
+#Requires:	gnome-games-extra-data-glines >= 3.2.0
+#Requires:	gnome-games-extra-data-gnobots2 >= 3.2.0
+#Requires:	gnome-games-extra-data-iagno >= 3.2.0
+#Requires:	gnome-games-extra-data-mahjongg >= 3.2.0
 Requires:	gnome-games-glchess >= 1:3.2.1
 Requires:	gnome-games-glines >= 1:3.2.1
 Requires:	gnome-games-gnect >= 1:3.2.1
@@ -349,7 +349,7 @@ Requires:	gimp >= 1:2.4.6
 Requires:	glabels >= 2.2.8
 Requires:	gnumeric >= 1:1.8.0
 Requires:	inkscape >= 0.46
-Requires:	planner >= 0.14.2
+#Requires:	planner >= 0.14.2
 
 %description office
 Office packages for GNOME Desktop Environment.
