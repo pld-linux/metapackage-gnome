@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	3.4.0
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -114,7 +114,7 @@ Summary(pl.UTF-8):	Pakiety do zarządzania środowiskiem graficznym GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	pessulus >= 2.30.4
-Requires:	sabayon >= 2.30.1
+Requires:	sabayon >= 2.22
 
 %description admin
 Administration packages for GNOME Desktop Environment.
