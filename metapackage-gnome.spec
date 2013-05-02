@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	3.8.0
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -85,7 +85,7 @@ Summary(pl.UTF-8):	Pakiety ułatwień dostępu dla środowiska graficznego GNOME
 Group:		X11/Applications/Accessibility
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	at-spi2-atk >= 2.8.1
-Requires:	at-spi2-core >= 2.8.1
+Requires:	at-spi2-core >= 2.8.0
 Requires:	caribou >= 0.4.10
 Requires:	dasher >= 4.11
 #Requires:	gnome-mag >= 0.16.1
