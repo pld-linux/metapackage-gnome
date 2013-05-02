@@ -1,8 +1,8 @@
 Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
-Version:	3.6.0
-Release:	2
+Version:	3.8.0
+Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -12,7 +12,7 @@ Requires:	%{name}-desktop = %{version}-%{release}
 Requires:	%{name}-devtools = %{version}-%{release}
 Requires:	%{name}-games = %{version}-%{release}
 Requires:	%{name}-office = %{version}-%{release}
-Requires:	banshee >= 2.6.0
+Requires:	banshee >= 2.6.1
 Requires:	gstreamer-a52dec
 Requires:	gstreamer-aac
 Requires:	gstreamer-amrnb
@@ -84,14 +84,14 @@ Summary:	Accessibility packages for GNOME Desktop Environment
 Summary(pl.UTF-8):	Pakiety ułatwień dostępu dla środowiska graficznego GNOME
 Group:		X11/Applications/Accessibility
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	at-spi2-atk >= 2.6.1
-Requires:	at-spi2-core >= 2.6.1
-Requires:	caribou >= 0.4.2
+Requires:	at-spi2-atk >= 2.8.1
+Requires:	at-spi2-core >= 2.8.1
+Requires:	caribou >= 0.4.10
 Requires:	dasher >= 4.11
 #Requires:	gnome-mag >= 0.16.1
 Requires:	gnome-speech >= 0.4.23
-Requires:	mousetweaks >= 3.4.1
-Requires:	orca >= 3.4.2
+Requires:	mousetweaks >= 3.8.0
+Requires:	orca >= 3.8.0
 Provides:	metapackage-gnome-extras-accessibility
 Obsoletes:	metapackage-gnome-extras-accessibility
 
@@ -107,7 +107,7 @@ Summary(pl.UTF-8):	Pakiety do zarządzania środowiskiem graficznym GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	pessulus >= 2.30.4
-Requires:	sabayon >= 2.22
+Requires:	sabayon >= 2.22.1
 
 %description admin
 Administration packages for GNOME Desktop Environment.
@@ -120,28 +120,28 @@ Summary:	The core components of the GNOME Desktop Environment
 Summary(pl.UTF-8):	Podstawowe składniki środowiska graficznego GNOME
 Group:		X11/Applications
 Requires:	PackageKit-gtk3-module
-Requires:	dconf >= 0.14.0
-Requires:	eog >= 3.6.1
-Requires:	gedit >= 3.6.1
-Requires:	gnome-control-center >= 1:3.6.2
-Requires:	gnome-desktop >= 3.6.1
-Requires:	gnome-icon-theme >= 3.6.0
-Requires:	gnome-icon-theme-symbolic >= 3.6.0
-Requires:	gnome-keyring >= 3.6.1
+Requires:	dconf >= 0.16.0
+Requires:	eog >= 3.8.0
+Requires:	gedit >= 3.8.0
+Requires:	gnome-control-center >= 1:3.8.1
+Requires:	gnome-desktop >= 3.8.1
+Requires:	gnome-icon-theme >= 3.8.0
+Requires:	gnome-icon-theme-symbolic >= 3.8.0
+Requires:	gnome-keyring >= 3.8.1
 Requires:	gnome-panel >= 3.6.0
 Requires:	gnome-screensaver >= 3.6.1
-Requires:	gnome-session >= 1:3.6.1
-Requires:	gnome-settings-daemon >= 1:3.6.1
-Requires:	gnome-shell >= 3.6.1
-Requires:	gnome-terminal >= 3.6.1
-Requires:	gnome-themes-standard >= 3.6.1
-Requires:	gsettings-desktop-schemas >= 3.6.0
-Requires:	gvfs >= 1.14.1
-Requires:	mutter >= 3.6.1
-Requires:	nautilus >= 3.6.2
+Requires:	gnome-session >= 1:3.8.1
+Requires:	gnome-settings-daemon >= 1:3.8.1
+Requires:	gnome-shell >= 3.8.1
+Requires:	gnome-terminal >= 3.8.1
+Requires:	gnome-themes-standard >= 3.8.1
+Requires:	gsettings-desktop-schemas >= 3.8.0
+Requires:	gvfs >= 1.16.1
+Requires:	mutter >= 3.8.1
+Requires:	nautilus >= 3.8.1
 Requires:	xdg-menus
-Requires:	yelp >= 3.6.1
-Suggests:	gnome-menus >= 3.6.0
+Requires:	yelp >= 3.8.0
+Suggests:	gnome-menus >= 3.8.0
 # Default GNOME font
 Suggests:	fonts-OTF-Cantarell
 
@@ -156,29 +156,28 @@ Summary:	GNOME Desktop Environment
 Summary(pl.UTF-8):	Środowisko graficzne GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	brasero >= 3.6.0
+Requires:	brasero >= 3.8.0
 #Requires:	abrt-desktop >= 2.0.15
-Requires:	cheese >= 3.6.1
-Requires:	dconf-editor >= 0.14.0
-Requires:	ekiga >= 3.9.90
-Requires:	empathy >= 3.6.1
+Requires:	cheese >= 3.8.1
+Requires:	dconf-editor >= 0.16.0
+Requires:	ekiga >= 4.0.1
+Requires:	empathy >= 3.8.1
 Requires:	eog-plugins >= 3.6.1
-Requires:	epiphany >= 3.6.1
-Requires:	epiphany-extensions >= 3.6.0
-Requires:	evince >= 3.6.1
-Requires:	evolution >= 3.6.1
-Requires:	evolution-addressbook >= 3.6.1
-Requires:	evolution-calendar >= 3.6.1
-Requires:	evolution-mail >= 3.6.1
-Requires:	file-roller >= 3.6.1.1
-Requires:	gcalctool >= 6.6.1
+Requires:	epiphany >= 3.8.1
+Requires:	evince >= 3.8.0
+Requires:	evolution >= 3.8.1
+Requires:	evolution-addressbook >= 3.8.1
+Requires:	evolution-calendar >= 3.8.1
+Requires:	evolution-mail >= 3.8.1
+Requires:	file-roller >= 3.8.1
+Requires:	gnome-calculator >= 3.8.1
 Requires:	gconf-editor >= 3.0.1
-Requires:	gdm >= 2:3.6.1
-Requires:	gnome-backgrounds >= 3.6.1
-Requires:	gnome-bluetooth >= 3.6.0
-Requires:	gnome-color-manager >= 3.6.0
-Requires:	gnome-disk-utility >= 3.6.1
-Requires:	gnome-icon-theme-extras >= 3.4.0
+Requires:	gdm >= 2:3.8.1.1
+Requires:	gnome-backgrounds >= 3.8.1
+Requires:	gnome-bluetooth >= 3.8.0
+Requires:	gnome-color-manager >= 3.8.1
+Requires:	gnome-disk-utility >= 3.8.0
+Requires:	gnome-icon-theme-extras >= 3.6.2
 Requires:	gnome-packagekit >= 3.6.0
 Suggests:	%{name}-games = %{version}-%{release}
 # not fully ported yet
@@ -186,11 +185,11 @@ Suggests:	%{name}-games = %{version}-%{release}
 #Requires:	gnome-media-volume-control >= 2.30.0
 #Requires:	gnome-netstatus >= 3.0.0
 Requires:	gnome-nettool >= 3.0.1
-Requires:	gnome-power-manager >= 3.6.0
+Requires:	gnome-power-manager >= 3.8.1
 Requires:	gnome-system-monitor >= 3.6.1
 Requires:	gnome-system-tools >= 3.0.0
-Requires:	gnome-tweak-tool >= 3.6.1
-Requires:	gnome-user-docs >= 3.6.1
+Requires:	gnome-tweak-tool >= 3.8.0
+Requires:	gnome-user-docs >= 3.8.0
 Requires:	gstreamer
 Requires:	gstreamer-audio-effects-base
 Requires:	gstreamer-audio-effects-good
@@ -225,38 +224,32 @@ Requires:	gstreamer-visualisation
 Requires:	gstreamer-vorbis
 Requires:	gstreamer-wavpack
 Requires:	gstreamer-ximagesrc
-Requires:	gucharmap >= 3.6.0
-Requires:	nautilus-extension-brasero >= 3.6.0
-Requires:	nautilus-extension-evince >= 3.6.1
+Requires:	gucharmap >= 3.8.1
+Requires:	nautilus-extension-brasero >= 3.8.0
+Requires:	nautilus-extension-evince >= 3.8.0
 # not fully ported yet
 #Requires:	nautilus-extension-seahorse >= 2.30.1
-Requires:	nautilus-sendto >= 3.6.0
-Requires:	nautilus-sendto-cd-burner >= 3.6.0
-Requires:	nautilus-sendto-empathy >= 3.6.1
-Requires:	nautilus-sendto-evolution >= 3.6.0
-Requires:	nautilus-sendto-gnome-bluetooth >= 3.6.0
-Requires:	nautilus-sendto-upnp >= 3.6.0
-Requires:	seahorse >= 3.6.2
+Requires:	seahorse >= 3.8.0
 # not fully ported yet
 #Requires:	seahorse-plugins >= 2.30.1
 Requires:	sound-juicer >= 3.4.0
-Requires:	gnote >= 3.6.0
-Requires:	totem >= 3.6.0
-Requires:	totem-gromit >= 3.6.0
-Requires:	totem-im-status >= 3.6.0
-Requires:	totem-lirc >= 3.6.0
-Requires:	totem-opensubtitles >= 3.6.0
-Requires:	vinagre >= 3.6.1
-Requires:	vino >= 3.6.1
-Requires:	zenity >= 3.6.0
+Requires:	gnote >= 3.8.0
+Requires:	totem >= 3.8.0
+Requires:	totem-gromit >= 3.8.0
+Requires:	totem-im-status >= 3.8.0
+Requires:	totem-lirc >= 3.8.0
+Requires:	totem-opensubtitles >= 3.8.0
+Requires:	vinagre >= 3.6.2
+Requires:	vino >= 3.8.1
+Requires:	zenity >= 3.8.0
 # gnome-menus is optional, so has to be alacarte
 Suggests:	alacarte >= 0.13.2
-Suggests:	browser-plugin-totem >= 3.6.0
-Suggests:	evolution-ews >= 3.6.0
-Suggests:	evolution-plugin-mail-notification >= 5.4
-Suggests:	gnome-mail-notification >= 5.4
+Suggests:	browser-plugin-totem >= 3.8.0
+Suggests:	evolution-ews >= 3.8.1
+Suggests:	evolution-plugin-mail-notification >= 5.4-17
+Suggests:	gnome-mail-notification >= 5.4-17
 Suggests:	gstreamer-audiosink-oss
-Suggests:	pam-pam_gnome_keyring >= 3.6.1
+Suggests:	pam-pam_gnome_keyring >= 3.8.1
 
 %description desktop
 GNOME Desktop Environment.
@@ -270,10 +263,10 @@ Summary(pl.UTF-8):	Narzędzia programisty dla środowiska graficznego GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	accerciser >= 1.12.1
-Requires:	anjuta >= 1:3.6.1
+Requires:	anjuta >= 1:3.8.0
 Requires:	anjuta-extras >= 3.4.0
-Requires:	devhelp >= 3.6.0
-Requires:	glade >= 3.14.1
+Requires:	devhelp >= 3.8.1
+Requires:	glade >= 3.14.2
 Requires:	gnome-devel-docs >= 3.6.1
 
 %description devtools
@@ -313,10 +306,10 @@ Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	abiword >= 1:2.8.6
 Requires:	dia >= 1:0.97.2
-Requires:	gimp >= 1:2.8.2
+Requires:	gimp >= 1:2.8.4
 Requires:	glabels >= 3.0.1
-Requires:	gnumeric >= 1:1.10.17
-Requires:	inkscape >= 0.48.2
+Requires:	gnumeric >= 1:1.11.90
+Requires:	inkscape >= 0.48.4
 Requires:	planner >= 0.14.6
 
 %description office
