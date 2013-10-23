@@ -1,8 +1,8 @@
 Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
-Version:	3.8.0
-Release:	2
+Version:	3.10.0
+Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -20,7 +20,6 @@ Requires:	gstreamer-amrwb
 Requires:	gstreamer-ass
 Requires:	gstreamer-audio-effects-bad
 Requires:	gstreamer-cdio
-Requires:	gstreamer-celt
 Requires:	gstreamer-curl
 Requires:	gstreamer-dts
 Requires:	gstreamer-dvdread
@@ -90,8 +89,8 @@ Requires:	caribou >= 0.4.10
 Requires:	dasher >= 4.11
 #Requires:	gnome-mag >= 0.16.1
 Requires:	gnome-speech >= 0.4.23
-Requires:	mousetweaks >= 3.8.0
-Requires:	orca >= 3.8.0
+Requires:	mousetweaks >= 3.10.0
+Requires:	orca >= 3.10.0
 Provides:	metapackage-gnome-extras-accessibility
 Obsoletes:	metapackage-gnome-extras-accessibility
 
@@ -121,27 +120,26 @@ Summary(pl.UTF-8):	Podstawowe składniki środowiska graficznego GNOME
 Group:		X11/Applications
 Requires:	PackageKit-gtk3-module
 Requires:	dconf >= 0.16.0
-Requires:	eog >= 3.8.0
-Requires:	gedit >= 3.8.0
-Requires:	gnome-control-center >= 1:3.8.1
-Requires:	gnome-desktop >= 3.8.1
-Requires:	gnome-icon-theme >= 3.8.0
-Requires:	gnome-icon-theme-symbolic >= 3.8.0
-Requires:	gnome-keyring >= 3.8.1
-Requires:	gnome-panel >= 3.6.0
+Requires:	eog >= 3.10.0
+Requires:	gedit >= 3.10.0
+Requires:	gnome-control-center >= 1:3.10.0
+Requires:	gnome-desktop >= 3.10.0
+Requires:	gnome-icon-theme >= 3.10.0
+Requires:	gnome-icon-theme-symbolic >= 3.10.0
+Requires:	gnome-keyring >= 3.10.0
 Requires:	gnome-screensaver >= 3.6.1
-Requires:	gnome-session >= 1:3.8.1
-Requires:	gnome-settings-daemon >= 1:3.8.1
-Requires:	gnome-shell >= 3.8.1
-Requires:	gnome-terminal >= 3.8.1
-Requires:	gnome-themes-standard >= 3.8.1
-Requires:	gsettings-desktop-schemas >= 3.8.0
+Requires:	gnome-session >= 1:3.10.0
+Requires:	gnome-settings-daemon >= 1:3.10.0
+Requires:	gnome-shell >= 3.10.0
+Requires:	gnome-terminal >= 3.10.0
+Requires:	gnome-themes-standard >= 3.10.0
+Requires:	gsettings-desktop-schemas >= 3.10.0
 Requires:	gvfs >= 1.16.1
-Requires:	mutter >= 3.8.1
-Requires:	nautilus >= 3.8.1
+Requires:	mutter >= 3.10.0
+Requires:	nautilus >= 3.10.0
 Requires:	xdg-menus
-Requires:	yelp >= 3.8.0
-Suggests:	gnome-menus >= 3.8.0
+Requires:	yelp >= 3.10.0
+Suggests:	gnome-menus >= 3.10.0
 # Default GNOME font
 Suggests:	fonts-OTF-Cantarell
 
@@ -156,27 +154,26 @@ Summary:	GNOME Desktop Environment
 Summary(pl.UTF-8):	Środowisko graficzne GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	brasero >= 3.8.0
+Requires:	brasero >= 3.10.0
 #Requires:	abrt-desktop >= 2.0.15
-Requires:	cheese >= 3.8.1
+Requires:	cheese >= 3.10.0
 Requires:	dconf-editor >= 0.16.0
 Requires:	ekiga >= 4.0.1
-Requires:	empathy >= 3.8.1
-Requires:	eog-plugins >= 3.6.1
-Requires:	epiphany >= 3.8.1
-Requires:	evince >= 3.8.0
-Requires:	evolution >= 3.8.1
-Requires:	evolution-addressbook >= 3.8.1
-Requires:	evolution-calendar >= 3.8.1
-Requires:	evolution-mail >= 3.8.1
-Requires:	file-roller >= 3.8.1
-Requires:	gnome-calculator >= 3.8.1
-Requires:	gconf-editor >= 3.0.1
-Requires:	gdm >= 2:3.8.1.1
-Requires:	gnome-backgrounds >= 3.8.1
-Requires:	gnome-bluetooth >= 3.8.0
-Requires:	gnome-color-manager >= 3.8.1
-Requires:	gnome-disk-utility >= 3.8.0
+Requires:	empathy >= 3.10.0
+Requires:	eog-plugins >= 3.10.0
+Requires:	epiphany >= 3.10.0
+Requires:	evince >= 3.10.0
+Requires:	evolution >= 3.10.0
+Requires:	evolution-addressbook >= 3.10.0
+Requires:	evolution-calendar >= 3.10.0
+Requires:	evolution-mail >= 3.10.0
+Requires:	file-roller >= 3.10.0
+Requires:	gnome-calculator >= 3.10.0
+Requires:	gdm >= 2:3.10.0
+Requires:	gnome-backgrounds >= 3.10.0
+Requires:	gnome-bluetooth >= 3.10.0
+Requires:	gnome-color-manager >= 3.10.0
+Requires:	gnome-disk-utility >= 3.10.0
 Requires:	gnome-icon-theme-extras >= 3.6.2
 Requires:	gnome-packagekit >= 3.6.0
 Suggests:	%{name}-games = %{version}-%{release}
@@ -185,11 +182,11 @@ Suggests:	%{name}-games = %{version}-%{release}
 #Requires:	gnome-media-volume-control >= 2.30.0
 #Requires:	gnome-netstatus >= 3.0.0
 Requires:	gnome-nettool >= 3.0.1
-Requires:	gnome-power-manager >= 3.8.1
-Requires:	gnome-system-monitor >= 3.6.1
+Requires:	gnome-power-manager >= 3.10.0
+Requires:	gnome-system-monitor >= 3.8.0
 Requires:	gnome-system-tools >= 3.0.0
-Requires:	gnome-tweak-tool >= 3.8.0
-Requires:	gnome-user-docs >= 3.8.0
+Requires:	gnome-tweak-tool >= 3.10.0
+Requires:	gnome-user-docs >= 3.10.0
 Requires:	gstreamer
 Requires:	gstreamer-audio-effects-base
 Requires:	gstreamer-audio-effects-good
@@ -224,32 +221,32 @@ Requires:	gstreamer-visualisation
 Requires:	gstreamer-vorbis
 Requires:	gstreamer-wavpack
 Requires:	gstreamer-ximagesrc
-Requires:	gucharmap >= 3.8.1
-Requires:	nautilus-extension-brasero >= 3.8.0
-Requires:	nautilus-extension-evince >= 3.8.0
+Requires:	gucharmap >= 3.10.0
+Requires:	nautilus-extension-brasero >= 3.10.0
+Requires:	nautilus-extension-evince >= 3.10.0
 # not fully ported yet
 #Requires:	nautilus-extension-seahorse >= 2.30.1
-Requires:	seahorse >= 3.8.0
+Requires:	seahorse >= 3.10.0
 # not fully ported yet
 #Requires:	seahorse-plugins >= 2.30.1
 Requires:	sound-juicer >= 3.4.0
-Requires:	gnote >= 3.8.0
-Requires:	totem >= 3.8.0
-Requires:	totem-gromit >= 3.8.0
-Requires:	totem-im-status >= 3.8.0
-Requires:	totem-lirc >= 3.8.0
-Requires:	totem-opensubtitles >= 3.8.0
-Requires:	vinagre >= 3.6.2
-Requires:	vino >= 3.8.1
-Requires:	zenity >= 3.8.0
+Requires:	gnote >= 3.10.0
+Requires:	totem >= 3.10.0
+Requires:	totem-gromit >= 3.10.0
+Requires:	totem-im-status >= 3.10.0
+Requires:	totem-lirc >= 3.10.0
+Requires:	totem-opensubtitles >= 3.10.0
+Requires:	vinagre >= 3.10.0
+Requires:	vino >= 3.10.0
+Requires:	zenity >= 3.10.0
 # gnome-menus is optional, so has to be alacarte
 Suggests:	alacarte >= 0.13.2
-Suggests:	browser-plugin-totem >= 3.8.0
-Suggests:	evolution-ews >= 3.8.1
+Suggests:	browser-plugin-totem >= 3.10.0
+Suggests:	evolution-ews >= 3.10.0
 Suggests:	evolution-plugin-mail-notification >= 5.4-17
 Suggests:	gnome-mail-notification >= 5.4-17
 Suggests:	gstreamer-audiosink-oss
-Suggests:	pam-pam_gnome_keyring >= 3.8.1
+Suggests:	pam-pam_gnome_keyring >= 3.10.0
 
 %description desktop
 GNOME Desktop Environment.
@@ -263,9 +260,9 @@ Summary(pl.UTF-8):	Narzędzia programisty dla środowiska graficznego GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	accerciser >= 1.12.1
-Requires:	anjuta >= 1:3.8.0
+Requires:	anjuta >= 1:3.10.0
 Requires:	anjuta-extras >= 3.4.0
-Requires:	devhelp >= 3.8.1
+Requires:	devhelp >= 3.10.0
 Requires:	glade >= 3.14.2
 Requires:	gnome-devel-docs >= 3.6.1
 
