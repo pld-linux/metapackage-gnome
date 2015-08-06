@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	3.16.0
-Release:	2
+Release:	3
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -277,21 +277,21 @@ Summary:	Games for GNOME Desktop Environment
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	aisleriot
-Requires:	gnome-glchess >= 3.16.0
-Requires:	gnome-glines >= 3.16.0
-Requires:	gnome-gnect >= 3.16.0
-Requires:	gnome-gnibbles >= 3.16.0
-Requires:	gnome-gnobots2 >= 3.16.0
-Requires:	gnome-gnomine >= 3.16.0
-Requires:	gnome-gnotravex >= 3.16.0
-Requires:	gnome-gnotski >= 3.16.0
-Requires:	gnome-gtali >= 3.16.0
-Requires:	gnome-iagno >= 3.16.0
-Requires:	gnome-lightsoff >= 3.16.0
+Requires:	five-or-more >= 3.16.0
+Requires:	four-in-a-row >= 3.16.0
+Requires:	gnome-chess >= 3.16.0
+Requires:	gnome-klotski >= 3.16.0
 Requires:	gnome-mahjongg >= 3.16.0
-Requires:	gnome-quadrapassel >= 3.16.0
+Requires:	gnome-mines >= 3.16.0
+Requires:	gnome-nibbles >= 3.16.0
+Requires:	gnome-robots >= 3.16.0
 Requires:	gnome-sudoku >= 3.16.0
-Requires:	gnome-swell-foop >= 3.16.0
+Requires:	gnome-tetravex >= 3.16.0
+Requires:	iagno >= 3.16.0
+Requires:	lightsoff >= 3.16.0
+Requires:	quadrapassel >= 3.16.0
+Requires:	swell-foop >= 3.16.0
+Requires:	tali >= 3.16.0
 
 %description games
 Games for GNOME Desktop Environment.
