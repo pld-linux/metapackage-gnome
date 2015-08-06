@@ -1,8 +1,8 @@
 Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
-Version:	3.10.0
-Release:	2
+Version:	3.16.0
+Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -277,21 +277,21 @@ Summary:	Games for GNOME Desktop Environment
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	aisleriot
-Requires:	gnome-games-glchess >= 1:3.6.1
-Requires:	gnome-games-glines >= 1:3.6.1
-Requires:	gnome-games-gnect >= 1:3.6.1
-Requires:	gnome-games-gnibbles >= 1:3.6.1
-Requires:	gnome-games-gnobots2 >= 1:3.6.1
-Requires:	gnome-games-gnomine >= 1:3.6.1
-Requires:	gnome-games-gnotravex >= 1:3.6.1
-Requires:	gnome-games-gnotski >= 1:3.6.1
-Requires:	gnome-games-gtali >= 1:3.6.1
-Requires:	gnome-games-iagno >= 1:3.6.1
-Requires:	gnome-games-lightsoff >= 1:3.6.1
-Requires:	gnome-games-mahjongg >= 1:3.6.1
-Requires:	gnome-games-quadrapassel >= 1:3.6.1
-Requires:	gnome-games-sudoku >= 1:3.6.1
-Requires:	gnome-games-swell-foop >= 1:3.6.1
+Requires:	gnome-glchess >= 1:3.6.1
+Requires:	gnome-glines >= 1:3.6.1
+Requires:	gnome-gnect >= 1:3.6.1
+Requires:	gnome-gnibbles >= 1:3.6.1
+Requires:	gnome-gnobots2 >= 1:3.6.1
+Requires:	gnome-gnomine >= 1:3.6.1
+Requires:	gnome-gnotravex >= 1:3.6.1
+Requires:	gnome-gnotski >= 1:3.6.1
+Requires:	gnome-gtali >= 1:3.6.1
+Requires:	gnome-iagno >= 1:3.6.1
+Requires:	gnome-lightsoff >= 1:3.6.1
+Requires:	gnome-mahjongg >= 1:3.6.1
+Requires:	gnome-quadrapassel >= 1:3.6.1
+Requires:	gnome-sudoku >= 1:3.6.1
+Requires:	gnome-swell-foop >= 1:3.6.1
 
 %description games
 Games for GNOME Desktop Environment.
