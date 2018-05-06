@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	3.28.0
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -26,7 +26,6 @@ Requires:	gstreamer-dvdread
 Requires:	gstreamer-flite
 Requires:	gstreamer-gme
 Requires:	gstreamer-gsm
-Requires:	gstreamer-lame
 Requires:	gstreamer-mjpegtools
 Requires:	gstreamer-mms
 Requires:	gstreamer-mpeg
@@ -34,7 +33,6 @@ Requires:	gstreamer-plugins-bad
 Requires:	gstreamer-plugins-ugly
 Requires:	gstreamer-resindvd
 Requires:	gstreamer-rtmp
-Requires:	gstreamer-schroedinger
 Requires:	gstreamer-sid
 Requires:	gstreamer-soundtouch
 Requires:	gstreamer-spc
