@@ -1,8 +1,8 @@
 Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
-Version:	3.28.0
-Release:	3
+Version:	3.34.0
+Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -12,7 +12,7 @@ Requires:	%{name}-desktop = %{version}-%{release}
 Requires:	%{name}-devtools = %{version}-%{release}
 Requires:	%{name}-games = %{version}-%{release}
 Requires:	%{name}-office = %{version}-%{release}
-Requires:	banshee >= 2.6.1
+Requires:	banshee >= 2.6.2
 Requires:	gstreamer-a52dec
 Requires:	gstreamer-aac
 Requires:	gstreamer-amrnb
@@ -21,46 +21,34 @@ Requires:	gstreamer-ass
 Requires:	gstreamer-audio-effects-bad
 Requires:	gstreamer-cdio
 Requires:	gstreamer-curl
+Requires:	gstreamer-dc1394
 Requires:	gstreamer-dts
 Requires:	gstreamer-dvdread
 Requires:	gstreamer-flite
 Requires:	gstreamer-gme
 Requires:	gstreamer-gsm
+Requires:	gstreamer-kate
+Requires:	gstreamer-ladspa
+Requires:	gstreamer-lv2
 Requires:	gstreamer-mjpegtools
 Requires:	gstreamer-mms
 Requires:	gstreamer-mpeg
+Requires:	gstreamer-musepack
+Requires:	gstreamer-neon
+Requires:	gstreamer-ofa
 Requires:	gstreamer-plugins-bad
 Requires:	gstreamer-plugins-ugly
 Requires:	gstreamer-resindvd
 Requires:	gstreamer-rtmp
 Requires:	gstreamer-sid
+Requires:	gstreamer-sndfile
 Requires:	gstreamer-soundtouch
+Requires:	gstreamer-videosink-directfb
 Requires:	gstreamer-vpx
 Requires:	gstreamer-x264
 Requires:	gstreamer-zbar
-# not ported to gstreamer 1.x
-#Requires:	gstreamer-audiosink-nas
-#Requires:	gstreamer-cdaudio
-#Requires:	gstreamer-dc1394
-#Requires:	gstreamer-dirac
-#Requires:	gstreamer-gsettings
-#Requires:	gstreamer-kate
-#Requires:	gstreamer-ladspa
-#Requires:	gstreamer-lv2
-#Requires:	gstreamer-musepack
-#Requires:	gstreamer-musicbrainz
-#Requires:	gstreamer-mythtv
-#Requires:	gstreamer-neon
-#Requires:	gstreamer-ofa
-#Requires:	gstreamer-sndfile
-#Requires:	gstreamer-timidity
-#Requires:	gstreamer-videosink-directfb
-#Requires:	gstreamer-videosink-sdl
-#Requires:	gstreamer-wildmidi
-#Requires:	gstreamer-xvid
-Requires:	liferea >= 1.8.9
-# shotwell needs vala-0.14 support
-#Requires:	shotwell
+Requires:	liferea >= 1.10.13
+Requires:	shotwell
 Suggests:	tracker
 Obsoletes:	metapackage-gnome-extras
 BuildArch:	noarch
@@ -77,14 +65,13 @@ Summary:	Accessibility packages for GNOME Desktop Environment
 Summary(pl.UTF-8):	Pakiety ułatwień dostępu dla środowiska graficznego GNOME
 Group:		X11/Applications/Accessibility
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	at-spi2-atk >= 2.8.1
-Requires:	at-spi2-core >= 2.8.0
-Requires:	caribou >= 0.4.10
+Requires:	at-spi2-atk >= 2.34.0
+Requires:	at-spi2-core >= 2.34.0
+Requires:	caribou >= 0.4.21
 Requires:	dasher >= 4.11
-#Requires:	gnome-mag >= 0.16.1
 Requires:	gnome-speech >= 0.4.23
-Requires:	mousetweaks >= 3.10.0
-Requires:	orca >= 3.10.0
+Requires:	mousetweaks >= 3.12.0
+Requires:	orca >= 3.24.0
 Provides:	metapackage-gnome-extras-accessibility
 Obsoletes:	metapackage-gnome-extras-accessibility
 
@@ -100,7 +87,7 @@ Summary(pl.UTF-8):	Pakiety do zarządzania środowiskiem graficznym GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	pessulus >= 2.30.4
-Requires:	sabayon >= 2.22.1
+Requires:	sabayon >= 2.30.1
 
 %description admin
 Administration packages for GNOME Desktop Environment.
@@ -113,27 +100,27 @@ Summary:	The core components of the GNOME Desktop Environment
 Summary(pl.UTF-8):	Podstawowe składniki środowiska graficznego GNOME
 Group:		X11/Applications
 Requires:	PackageKit-gtk3-module
-Requires:	dconf >= 0.16.0
-Requires:	eog >= 3.10.0
-Requires:	gedit >= 3.10.0
-Requires:	gnome-control-center >= 1:3.10.0
-Requires:	gnome-desktop >= 3.10.0
-Requires:	gnome-icon-theme >= 3.10.0
-Requires:	gnome-icon-theme-symbolic >= 3.10.0
-Requires:	gnome-keyring >= 3.10.0
+Requires:	dconf >= 0.34.0
+Requires:	eog >= 3.34.1
+Requires:	gedit >= 3.30.2
+Requires:	gnome-control-center >= 1:3.34.0
+Requires:	gnome-desktop >= 3.34.0
+Requires:	gnome-icon-theme >= 3.12.0
+Requires:	gnome-icon-theme-symbolic >= 3.12.0
+Requires:	gnome-keyring >= 3.28.0
 Requires:	gnome-screensaver >= 3.6.1
-Requires:	gnome-session >= 1:3.10.0
-Requires:	gnome-settings-daemon >= 1:3.10.0
-Requires:	gnome-shell >= 3.10.0
-Requires:	gnome-terminal >= 3.10.0
-Requires:	gnome-themes-standard >= 3.10.0
-Requires:	gsettings-desktop-schemas >= 3.10.0
-Requires:	gvfs >= 1.16.1
-Requires:	mutter >= 3.10.0
-Requires:	nautilus >= 3.10.0
+Requires:	gnome-session >= 1:3.34.1
+Requires:	gnome-settings-daemon >= 1:3.34.1
+Requires:	gnome-shell >= 3.34.1
+Requires:	gnome-terminal >= 3.30.2
+Requires:	gnome-themes-standard >= 3.22.3
+Requires:	gsettings-desktop-schemas >= 3.34.0
+Requires:	gvfs >= 1.42.1
+Requires:	mutter >= 3.34.1
+Requires:	nautilus >= 3.34.1
 Requires:	xdg-menus
-Requires:	yelp >= 3.10.0
-Suggests:	gnome-menus >= 3.10.0
+Requires:	yelp >= 3.28.0
+Suggests:	gnome-menus >= 3.32.0
 # Default GNOME font
 Suggests:	fonts-OTF-Cantarell
 
@@ -148,46 +135,41 @@ Summary:	GNOME Desktop Environment
 Summary(pl.UTF-8):	Środowisko graficzne GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	brasero >= 3.8.0
+Requires:	brasero >= 3.12.0
 #Requires:	abrt-desktop >= 2.0.15
-Requires:	cheese >= 3.10.0
-Requires:	dconf-editor >= 0.16.0
+Requires:	cheese >= 3.34.0
+Requires:	dconf-editor >= 3.34.2
 Requires:	ekiga >= 4.0.1
-Requires:	empathy >= 3.10.0
-Requires:	eog-plugins >= 3.10.0
-Requires:	epiphany >= 3.10.0
-Requires:	evince >= 3.10.0
-Requires:	evolution >= 3.10.0
-Requires:	evolution-addressbook >= 3.10.0
-Requires:	evolution-calendar >= 3.10.0
-Requires:	evolution-mail >= 3.10.0
-Requires:	file-roller >= 3.10.0
-Requires:	gnome-calculator >= 3.10.0
-Requires:	gdm >= 2:3.10.0
-Requires:	gnome-backgrounds >= 3.10.0
-Requires:	gnome-bluetooth >= 3.10.0
-Requires:	gnome-color-manager >= 3.10.0
-Requires:	gnome-disk-utility >= 3.10.0
-Requires:	gnome-icon-theme-extras >= 3.6.2
-Requires:	gnome-packagekit >= 3.6.0
+Requires:	empathy >= 3.12.14
+Requires:	eog-plugins >= 3.26.3
+Requires:	epiphany >= 3.30.2
+Requires:	evince >= 3.34.1
+Requires:	evolution >= 3.34.1
+Requires:	evolution-addressbook >= 3.34.1
+Requires:	evolution-calendar >= 3.34.1
+Requires:	evolution-mail >= 3.34.1
+Requires:	file-roller >= 3.24.1
+Requires:	gnome-calculator >= 3.30.1
+Requires:	gdm >= 2:3.14.1
+Requires:	gnome-backgrounds >= 3.30.0
+Requires:	gnome-bluetooth >= 3.34.0
+Requires:	gnome-color-manager >= 3.30.0
+Requires:	gnome-disk-utility >= 3.24.1
+Requires:	gnome-icon-theme-extras >= 3.12.0
+Requires:	gnome-packagekit >= 3.24.0
 Suggests:	%{name}-games = %{version}-%{release}
-# not fully ported yet
-#Requires:	gnome-media-sound-recorder >= 2.30.0
-#Requires:	gnome-media-volume-control >= 2.30.0
-#Requires:	gnome-netstatus >= 3.0.0
-Requires:	gnome-nettool >= 3.0.1
-Requires:	gnome-power-manager >= 3.10.0
-Requires:	gnome-system-monitor >= 3.8.0
+Requires:	gnome-nettool >= 3.8.1
+Requires:	gnome-power-manager >= 3.32.0
+Requires:	gnome-system-monitor >= 3.30.0
 Requires:	gnome-system-tools >= 3.0.0
-Requires:	gnome-tweak-tool >= 3.10.0
-Requires:	gnome-user-docs >= 3.10.0
+Requires:	gnome-tweak-tool >= 3.26.4
+Requires:	gnome-user-docs >= 3.26.1
 Requires:	gstreamer
 Requires:	gstreamer-audio-effects-base
 Requires:	gstreamer-audio-effects-good
 Requires:	gstreamer-audio-formats
 Requires:	gstreamer-audiosink-alsa
-# not yet in gstreamer 1.x
-#Requires:	gstreamer-cairo
+Requires:	gstreamer-cairo
 Requires:	gstreamer-cdparanoia
 Requires:	gstreamer-dv
 Requires:	gstreamer-flac
@@ -215,32 +197,26 @@ Requires:	gstreamer-visualisation
 Requires:	gstreamer-vorbis
 Requires:	gstreamer-wavpack
 Requires:	gstreamer-ximagesrc
-Requires:	gucharmap >= 3.10.0
-Requires:	nautilus-extension-brasero >= 3.8.0
-Requires:	nautilus-extension-evince >= 3.10.0
+Requires:	gucharmap >= 12.0.1
+Requires:	nautilus-extension-brasero >= 3.12.2
+Requires:	nautilus-extension-evince >= 3.34.1
 # not fully ported yet
 #Requires:	nautilus-extension-seahorse >= 2.30.1
-Requires:	seahorse >= 3.10.0
+Requires:	seahorse >= 3.34.1
 # not fully ported yet
 #Requires:	seahorse-plugins >= 2.30.1
-Requires:	sound-juicer >= 3.4.0
-Requires:	gnote >= 3.10.0
-Requires:	totem >= 3.10.0
-Requires:	totem-gromit >= 3.10.0
-Requires:	totem-im-status >= 3.10.0
-Requires:	totem-lirc >= 3.10.0
-Requires:	totem-opensubtitles >= 3.10.0
-Requires:	vinagre >= 3.10.0
-Requires:	vino >= 3.10.0
-Requires:	zenity >= 3.8.0
-# gnome-menus is optional, so has to be alacarte
-Suggests:	alacarte >= 0.13.2
-Suggests:	browser-plugin-totem >= 3.10.0
-Suggests:	evolution-ews >= 3.10.0
-Suggests:	evolution-plugin-mail-notification >= 5.4-17
-Suggests:	gnome-mail-notification >= 5.4-17
-Suggests:	gstreamer-audiosink-oss
-Suggests:	pam-pam_gnome_keyring >= 3.10.0
+Requires:	sound-juicer >= 3.24.0
+Requires:	gnote >= 3.24.0
+Requires:	totem >= 3.34.1
+Requires:	totem-im-status >= 3.34.0
+Requires:	totem-opensubtitles >= 3.34.0
+Requires:	vinagre >= 3.22.0
+Requires:	vino >= 3.22.0
+Requires:	zenity >= 3.32.0
+Suggests:	evolution-ews >= 3.34.1
+Suggests:	evolution-plugin-mail-notification >= 5.4-23
+Suggests:	gnome-mail-notification >= 5.4-23
+Suggests:	pam-pam_gnome_keyring >= 3.34.0
 
 %description desktop
 GNOME Desktop Environment.
@@ -253,12 +229,12 @@ Summary:	Developer tools for GNOME Desktop Environment
 Summary(pl.UTF-8):	Narzędzia programisty dla środowiska graficznego GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	accerciser >= 1.12.1
-Requires:	anjuta >= 1:3.10.0
+Requires:	accerciser >= 3.22.0
+Requires:	anjuta >= 1:3.16.0
 Requires:	anjuta-extras >= 3.4.0
-Requires:	devhelp >= 3.10.0
-Requires:	glade >= 3.14.2
-Requires:	gnome-devel-docs >= 3.6.1
+Requires:	devhelp >= 3.26.1
+Requires:	glade >= 3.22.1
+Requires:	gnome-devel-docs >= 3.22.1
 
 %description devtools
 Developer tools for GNOME Desktop Environment.
@@ -271,21 +247,21 @@ Summary:	Games for GNOME Desktop Environment
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	aisleriot
-Requires:	five-or-more >= 3.16.0
-Requires:	four-in-a-row >= 3.16.0
-Requires:	gnome-chess >= 3.16.0
-Requires:	gnome-klotski >= 3.16.0
-Requires:	gnome-mahjongg >= 3.16.0
-Requires:	gnome-mines >= 3.16.0
-Requires:	gnome-nibbles >= 3.16.0
-Requires:	gnome-robots >= 3.16.0
-Requires:	gnome-sudoku >= 3.16.0
-Requires:	gnome-tetravex >= 3.16.0
-Requires:	iagno >= 3.16.0
-Requires:	lightsoff >= 3.16.0
-Requires:	quadrapassel >= 3.16.0
-Requires:	swell-foop >= 3.16.0
-Requires:	tali >= 3.16.0
+Requires:	five-or-more
+Requires:	four-in-a-row
+Requires:	gnome-chess
+Requires:	gnome-klotski
+Requires:	gnome-mahjongg
+Requires:	gnome-mines
+Requires:	gnome-nibbles
+Requires:	gnome-robots
+Requires:	gnome-sudoku
+Requires:	gnome-tetravex
+Requires:	iagno
+Requires:	lightsoff
+Requires:	quadrapassel
+Requires:	swell-foop
+Requires:	tali
 
 %description games
 Games for GNOME Desktop Environment.
@@ -295,12 +271,12 @@ Summary:	Office suite for GNOME Desktop Environment
 Summary(pl.UTF-8):	Pakiety biurowe dla środowiska graficznego GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	abiword >= 1:2.8.6
-Requires:	dia >= 1:0.97.2
-Requires:	gimp >= 1:2.8.4
-Requires:	glabels >= 3.0.1
-Requires:	gnumeric >= 1:1.11.90
-Requires:	inkscape >= 0.48.4
+Requires:	abiword >= 1:3.0.2
+Requires:	dia >= 1:0.97.3
+Requires:	gimp >= 1:2.10.10
+Requires:	glabels >= 3.4.1
+Requires:	gnumeric >= 1:1.12.45
+Requires:	inkscape >= 0.92.3
 
 %description office
 Office packages for GNOME Desktop Environment.
