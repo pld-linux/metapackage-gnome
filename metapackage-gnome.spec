@@ -51,6 +51,7 @@ Requires:	liferea >= 1.10.13
 Requires:	shotwell
 Suggests:	tracker >= 2.3
 Obsoletes:	metapackage-gnome-extras
+Obsoletes:	gnome
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -244,6 +245,7 @@ Narzędzia programisty dla środowiska graficznego GNOME.
 
 %package games
 Summary:	Games for GNOME Desktop Environment
+Summary(pl.UTF-8):	Gry dla środowiska graficznego GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	aisleriot >= 3.22
@@ -265,9 +267,17 @@ Requires:	lightsoff >= 3.34
 Requires:	quadrapassel >= 3.34
 Requires:	swell-foop >= 3.34
 Requires:	tali >= 3.32
+Obsoletes:	gnome-games-blackjack
+Obsoletes:	gnome-games-gataxx
+# gataxx -> iagno?
+Obsoletes:	gnome-games-servers
+Obsoletes:	gnome-games-stones
 
 %description games
 Games for GNOME Desktop Environment.
+
+%description games -l pl.UTF-8
+Gry dla środowiska graficznego GNOME.
 
 %package office
 Summary:	Office suite for GNOME Desktop Environment
