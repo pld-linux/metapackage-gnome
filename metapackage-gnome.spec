@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	3.34.0
-Release:	4
+Release:	5
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -162,7 +162,6 @@ Suggests:	%{name}-games = %{version}-%{release}
 Requires:	gnome-nettool >= 3.8.1
 Requires:	gnome-power-manager >= 3.32.0
 Requires:	gnome-system-monitor >= 3.32.0
-Requires:	gnome-system-tools >= 3.0.0
 Requires:	gnome-tweaks >= 3.34.0
 Requires:	gnome-user-docs >= 3.34.0
 Requires:	gstreamer
