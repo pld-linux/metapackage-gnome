@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	3.34.0
-Release:	5
+Release:	6
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -203,6 +203,7 @@ Requires:	nautilus-extension-evince >= 3.34.1
 # not fully ported yet
 #Requires:	nautilus-extension-seahorse >= 2.30.1
 Requires:	seahorse >= 3.34
+Requires:	seahorse-gnome-shell-search >= 3.34
 # not fully ported yet
 #Requires:	seahorse-plugins >= 2.30.1
 Requires:	sound-juicer >= 3.24.0
