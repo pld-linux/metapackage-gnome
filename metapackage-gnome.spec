@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	3.38.0
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -192,7 +192,7 @@ Requires:	gstreamer-visualisation >= 1.16
 Requires:	gstreamer-vorbis >= 1.16
 Requires:	gstreamer-wavpack >= 1.16
 Requires:	gstreamer-ximagesrc >= 1.16
-Requires:	gucharmap2 >= 3.0.0
+Requires:	gucharmap >= 12.0.0
 Requires:	nautilus-extension-brasero >= 3.12.2
 Requires:	nautilus-extension-evince >= 3.38.0
 Requires:	polari >= 3.38.0
