@@ -86,6 +86,8 @@ Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
 Requires:	gnome-initial-setup >= 3.38.0
 Requires:	gnome-software >= 3.38.0
+Obsoletes:	gnome-system-tools < 3.0.1
+Obsoletes:	system-tools-backends < 3
 
 %description admin
 Administration packages for GNOME Desktop Environment.
