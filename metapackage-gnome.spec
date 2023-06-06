@@ -14,7 +14,7 @@ Requires:	%{name}-games = %{version}-%{release}
 Requires:	%{name}-office = %{version}-%{release}
 Requires:	gnome-getting-started-docs >= 3.38.0
 Requires:	gnome-tour >= 43
-Requires:	rhythmbox >= 3.4.6
+Requires:	rhythmbox >= 3.4.7
 Requires:	gstreamer-a52dec >= 1.20
 Requires:	gstreamer-aac >= 1.20
 Requires:	gstreamer-amrnb >= 1.20
@@ -51,7 +51,7 @@ Requires:	shotwell >= 0.30
 Suggests:	tracker >= 2.3
 Suggests:	tracker3 >= 3.4
 Obsoletes:	metapackage-gnome-extras < 2.22
-Obsoletes:	gnome
+Obsoletes:	gnome < 2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
