@@ -1,7 +1,7 @@
 Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
-Version:	43
+Version:	44
 Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
@@ -13,43 +13,42 @@ Requires:	%{name}-devtools = %{version}-%{release}
 Requires:	%{name}-games = %{version}-%{release}
 Requires:	%{name}-office = %{version}-%{release}
 Requires:	gnome-getting-started-docs >= 3.38.0
-Requires:	gnome-tour >= 43
+Requires:	gnome-tour >= 44
 Requires:	rhythmbox >= 3.4.7
-Requires:	gstreamer-a52dec >= 1.20
-Requires:	gstreamer-aac >= 1.20
-Requires:	gstreamer-amrnb >= 1.20
-Requires:	gstreamer-amrwb >= 1.20
-Requires:	gstreamer-ass >= 1.20
-Requires:	gstreamer-audio-effects-bad >= 1.20
-Requires:	gstreamer-cdio >= 1.20
-Requires:	gstreamer-curl >= 1.20
-Requires:	gstreamer-dc1394 >= 1.20
-Requires:	gstreamer-dts >= 1.20
-Requires:	gstreamer-dvdread >= 1.20
-Requires:	gstreamer-flite >= 1.20
-Requires:	gstreamer-gme >= 1.20
-Requires:	gstreamer-gsm >= 1.20
-Requires:	gstreamer-kate >= 1.20
-Requires:	gstreamer-ladspa >= 1.20
-Requires:	gstreamer-lv2 >= 1.20
-Requires:	gstreamer-mjpegtools >= 1.20
-Requires:	gstreamer-mpeg >= 1.20
-Requires:	gstreamer-musepack >= 1.20
-Requires:	gstreamer-neon >= 1.20
-Requires:	gstreamer-plugins-bad >= 1.20
-Requires:	gstreamer-plugins-ugly >= 1.20
-Requires:	gstreamer-resindvd >= 1.20
-Requires:	gstreamer-rtmp >= 1.20
-Requires:	gstreamer-sid >= 1.20
-Requires:	gstreamer-sndfile >= 1.20
-Requires:	gstreamer-soundtouch >= 1.20
-Requires:	gstreamer-videosink-directfb >= 1.20
-Requires:	gstreamer-vpx >= 1.20
-Requires:	gstreamer-x264 >= 1.20
-Requires:	gstreamer-zbar >= 1.20
-Requires:	shotwell >= 0.30
-Suggests:	tracker >= 2.3
-Suggests:	tracker3 >= 3.4
+Requires:	gstreamer-a52dec >= 1.22
+Requires:	gstreamer-aac >= 1.22
+Requires:	gstreamer-amrnb >= 1.22
+Requires:	gstreamer-amrwb >= 1.22
+Requires:	gstreamer-ass >= 1.22
+Requires:	gstreamer-audio-effects-bad >= 1.22
+Requires:	gstreamer-cdio >= 1.22
+Requires:	gstreamer-curl >= 1.22
+Requires:	gstreamer-dc1394 >= 1.22
+Requires:	gstreamer-dts >= 1.22
+Requires:	gstreamer-dvdread >= 1.22
+Requires:	gstreamer-flite >= 1.22
+Requires:	gstreamer-gme >= 1.22
+Requires:	gstreamer-gsm >= 1.22
+Requires:	gstreamer-kate >= 1.22
+Requires:	gstreamer-ladspa >= 1.22
+Requires:	gstreamer-lv2 >= 1.22
+Requires:	gstreamer-mjpegtools >= 1.22
+Requires:	gstreamer-mpeg >= 1.22
+Requires:	gstreamer-musepack >= 1.22
+Requires:	gstreamer-neon >= 1.22
+Requires:	gstreamer-plugins-bad >= 1.22
+Requires:	gstreamer-plugins-ugly >= 1.22
+Requires:	gstreamer-resindvd >= 1.22
+Requires:	gstreamer-rtmp >= 1.22
+Requires:	gstreamer-sid >= 1.22
+Requires:	gstreamer-sndfile >= 1.22
+Requires:	gstreamer-soundtouch >= 1.22
+Requires:	gstreamer-videosink-directfb >= 1.22
+Requires:	gstreamer-vpx >= 1.22
+Requires:	gstreamer-x264 >= 1.22
+Requires:	gstreamer-zbar >= 1.22
+Requires:	shotwell >= 0.32
+Suggests:	tracker3 >= 3.5
 Obsoletes:	metapackage-gnome-extras < 2.22
 Obsoletes:	gnome < 2
 BuildArch:	noarch
@@ -66,9 +65,9 @@ Summary:	Accessibility packages for GNOME Desktop Environment
 Summary(pl.UTF-8):	Pakiety ułatwień dostępu dla środowiska graficznego GNOME
 Group:		X11/Applications/Accessibility
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	at-spi2-atk >= 2.46.0
-Requires:	at-spi2-core >= 2.46.0
-Requires:	orca >= 43
+Requires:	at-spi2-atk >= 2.48.0
+Requires:	at-spi2-core >= 2.48.0
+Requires:	orca >= 44
 Provides:	metapackage-gnome-extras-accessibility
 Obsoletes:	metapackage-gnome-extras-accessibility < 2.22
 
@@ -83,8 +82,8 @@ Summary:	Administration packages for GNOME Desktop Environment
 Summary(pl.UTF-8):	Pakiety do zarządzania środowiskiem graficznym GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	gnome-initial-setup >= 43
-Requires:	gnome-software >= 43
+Requires:	gnome-initial-setup >= 44
+Requires:	gnome-software >= 44
 Obsoletes:	gnome-system-tools < 3.0.1
 Obsoletes:	system-tools-backends < 3
 
@@ -99,21 +98,21 @@ Summary:	The core components of the GNOME Desktop Environment
 Summary(pl.UTF-8):	Podstawowe składniki środowiska graficznego GNOME
 Group:		X11/Applications
 Requires:	PackageKit-gtk3-module
-Requires:	adwaita-icon-theme >= 43
+Requires:	adwaita-icon-theme >= 44
 Requires:	dconf >= 0.40.0
-Requires:	eog >= 43
-Requires:	gedit >= 43
-Requires:	gnome-control-center >= 1:43
-Requires:	gnome-desktop >= 43
+Requires:	eog >= 44
+Requires:	gedit >= 44
+Requires:	gnome-control-center >= 1:44
+Requires:	gnome-desktop >= 44
 Requires:	gnome-keyring >= 42
-Requires:	gnome-session >= 1:43
-Requires:	gnome-settings-daemon >= 1:43
-Requires:	gnome-shell >= 43
-Requires:	gnome-terminal >= 3.44
-Requires:	gsettings-desktop-schemas >= 43
+Requires:	gnome-session >= 1:44
+Requires:	gnome-settings-daemon >= 1:44
+Requires:	gnome-shell >= 44
+Requires:	gnome-terminal >= 3.48
+Requires:	gsettings-desktop-schemas >= 44
 Requires:	gvfs >= 1.50.0
-Requires:	mutter >= 43
-Requires:	nautilus >= 43
+Requires:	mutter >= 44
+Requires:	nautilus >= 44
 Requires:	xdg-menus
 Requires:	yelp >= 42
 Suggests:	gnome-menus >= 3.36.0
@@ -131,83 +130,84 @@ Summary:	GNOME Desktop Environment
 Summary(pl.UTF-8):	Środowisko graficzne GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	NetworkManager >= 2:1.40.0
+Requires:	NetworkManager >= 2:1.42.0
 Requires:	brasero >= 3.12.0
 #Requires:	abrt-desktop >= 2.14.0
-Requires:	cheese >= 43
+Requires:	cheese >= 44
 Requires:	dconf-editor >= 43
-Requires:	eog-plugins >= 42
-Requires:	epiphany >= 43
-Requires:	evince >= 43
-Requires:	evolution >= 3.46.0
-Requires:	evolution-addressbook >= 3.46.0
-Requires:	evolution-calendar >= 3.46.0
-Requires:	evolution-mail >= 3.46.0
+Requires:	eog-plugins >= 44
+Requires:	epiphany >= 44
+Requires:	evince >= 44
+Requires:	evolution >= 3.48.0
+Requires:	evolution-addressbook >= 3.48.0
+Requires:	evolution-calendar >= 3.48.0
+Requires:	evolution-mail >= 3.48.0
 Requires:	file-roller >= 43
-Requires:	gnome-calculator >= 43
-Requires:	gnome-calendar >= 43
-Requires:	gdm >= 2:43
-Requires:	gnome-backgrounds >= 43
+Requires:	gnome-calculator >= 44
+Requires:	gnome-calendar >= 44
+Requires:	gdm >= 2:44
+Requires:	gnome-backgrounds >= 44
 Requires:	gnome-bluetooth >= 42
 Requires:	gnome-color-manager >= 3.36.0
-Requires:	gnome-connections >= 43
-Requires:	gnome-disk-utility >= 43
+Requires:	gnome-connections >= 44
+Requires:	gnome-disk-utility >= 44
 Requires:	gnome-packagekit >= 43
 Requires:	gnome-power-manager >= 43
-Requires:	gnome-remote-desktop >= 43
-Requires:	gnome-system-monitor >= 42
+Requires:	gnome-remote-desktop >= 44
+Requires:	gnome-system-monitor >= 44
 Requires:	gnome-tweaks >= 40
-Requires:	gnome-user-docs >= 43
-Requires:	gstreamer >= 1.20
-Requires:	gstreamer-audio-effects-base >= 1.20
-Requires:	gstreamer-audio-effects-good >= 1.20
-Requires:	gstreamer-audio-formats >= 1.20
-Requires:	gstreamer-audiosink-alsa >= 1.20
-Requires:	gstreamer-cairo >= 1.20
-Requires:	gstreamer-cdparanoia >= 1.20
-Requires:	gstreamer-dv >= 1.20
-Requires:	gstreamer-flac >= 1.20
-Requires:	gstreamer-gdkpixbuf >= 1.20
-Requires:	gstreamer-imagesink-x >= 1.20
-Requires:	gstreamer-imagesink-xv >= 1.20
-Requires:	gstreamer-jack >= 1.20
-Requires:	gstreamer-libpng >= 1.20
-Requires:	gstreamer-libvisual >= 1.20
-Requires:	gstreamer-pango >= 1.20
-Requires:	gstreamer-plugins-base >= 1.20
-Requires:	gstreamer-plugins-good >= 1.20
-Requires:	gstreamer-pulseaudio >= 1.20
-Requires:	gstreamer-raw1394 >= 1.20
-Requires:	gstreamer-shout2 >= 1.20
-Requires:	gstreamer-soup >= 1.20
-Requires:	gstreamer-speex >= 1.20
-Requires:	gstreamer-taglib >= 1.20
-Requires:	gstreamer-theora >= 1.20
-Requires:	gstreamer-v4l2 >= 1.20
-Requires:	gstreamer-video-effects >= 1.20
-Requires:	gstreamer-videosink-aa >= 1.20
-Requires:	gstreamer-videosink-libcaca >= 1.20
-Requires:	gstreamer-visualisation >= 1.20
-Requires:	gstreamer-vorbis >= 1.20
-Requires:	gstreamer-wavpack >= 1.20
-Requires:	gstreamer-ximagesrc >= 1.20
+Requires:	gnome-user-docs >= 44
+Requires:	gstreamer >= 1.22
+Requires:	gstreamer-audio-effects-base >= 1.22
+Requires:	gstreamer-audio-effects-good >= 1.22
+Requires:	gstreamer-audio-formats >= 1.22
+Requires:	gstreamer-audiosink-alsa >= 1.22
+Requires:	gstreamer-cairo >= 1.22
+Requires:	gstreamer-cdparanoia >= 1.22
+Requires:	gstreamer-dv >= 1.22
+Requires:	gstreamer-flac >= 1.22
+Requires:	gstreamer-gdkpixbuf >= 1.22
+Requires:	gstreamer-imagesink-x >= 1.22
+Requires:	gstreamer-imagesink-xv >= 1.22
+Requires:	gstreamer-jack >= 1.22
+Requires:	gstreamer-libpng >= 1.22
+Requires:	gstreamer-libvisual >= 1.22
+Requires:	gstreamer-pango >= 1.22
+Requires:	gstreamer-plugins-base >= 1.22
+Requires:	gstreamer-plugins-good >= 1.22
+Requires:	gstreamer-pulseaudio >= 1.22
+Requires:	gstreamer-raw1394 >= 1.22
+Requires:	gstreamer-shout2 >= 1.22
+Requires:	gstreamer-soup >= 1.22
+Requires:	gstreamer-speex >= 1.22
+Requires:	gstreamer-taglib >= 1.22
+Requires:	gstreamer-theora >= 1.22
+Requires:	gstreamer-v4l2 >= 1.22
+Requires:	gstreamer-video-effects >= 1.22
+Requires:	gstreamer-videosink-aa >= 1.22
+Requires:	gstreamer-videosink-libcaca >= 1.22
+Requires:	gstreamer-visualisation >= 1.22
+Requires:	gstreamer-vorbis >= 1.22
+Requires:	gstreamer-wavpack >= 1.22
+Requires:	gstreamer-ximagesrc >= 1.22
 Requires:	gucharmap >= 12.0.0
-Requires:	nautilus-extension-brasero >= 3.12.2
+# not ported to nautilus4
+#Requires:	nautilus-extension-brasero >= 3.12.2
 # not ported to nautilus4 in GNOME 43
 #Requires:	nautilus-extension-evince >= 3.38.0
 Requires:	polari >= 43
 Requires:	seahorse >= 43
 Requires:	seahorse-gnome-shell-search >= 43
-Requires:	sound-juicer >= 3.38.0
-Requires:	gnote >= 43
+Requires:	sound-juicer >= 3.40.0
+Requires:	gnote >= 44
 Requires:	totem >= 43
 Requires:	totem-im-status >= 43
 Requires:	totem-opensubtitles >= 43
-Requires:	zenity >= 3.42.0
+Requires:	zenity >= 3.44.0
 Suggests:	%{name}-games = %{version}-%{release}
 # ekiga is dead, linphone is qt-based now; what instead?
 #Suggests:	ekiga >= 4.0.1
-Suggests:	evolution-ews >= 3.46.0
+Suggests:	evolution-ews >= 3.48.0
 Suggests:	pam-pam_gnome_keyring >= 42
 
 %description desktop
@@ -246,14 +246,14 @@ Requires:	gnome-2048 >= 3.38.0
 Requires:	gnome-chess >= 43
 Requires:	gnome-games >= 1:40
 Requires:	gnome-klotski >= 3.38.0
-Requires:	gnome-mahjongg >= 3.38.0
+Requires:	gnome-mahjongg >= 3.40.0
 Requires:	gnome-mines >= 40
 Requires:	gnome-nibbles >= 3.38.0
 Requires:	gnome-robots >= 40
-Requires:	gnome-sudoku >= 43
+Requires:	gnome-sudoku >= 44
 Requires:	gnome-taquin >= 3.38.0
 Requires:	gnome-tetravex >= 3.38.0
-Requires:	hitori >= 3.38.0
+Requires:	hitori >= 44
 Requires:	iagno >= 3.38.0
 Requires:	lightsoff >= 40
 Requires:	quadrapassel >= 40
