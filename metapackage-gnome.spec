@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	44
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -43,7 +43,6 @@ Requires:	gstreamer-rtmp >= 1.22
 Requires:	gstreamer-sid >= 1.22
 Requires:	gstreamer-sndfile >= 1.22
 Requires:	gstreamer-soundtouch >= 1.22
-Requires:	gstreamer-videosink-directfb >= 1.22
 Requires:	gstreamer-vpx >= 1.22
 Requires:	gstreamer-x264 >= 1.22
 Requires:	gstreamer-zbar >= 1.22
