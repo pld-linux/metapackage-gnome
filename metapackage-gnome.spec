@@ -1,8 +1,8 @@
 Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
-Version:	44
-Release:	2
+Version:	45
+Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -13,7 +13,7 @@ Requires:	%{name}-devtools = %{version}-%{release}
 Requires:	%{name}-games = %{version}-%{release}
 Requires:	%{name}-office = %{version}-%{release}
 Requires:	gnome-getting-started-docs >= 3.38.0
-Requires:	gnome-tour >= 44
+Requires:	gnome-tour >= 45
 Requires:	rhythmbox >= 3.4.7
 Requires:	gstreamer-a52dec >= 1.22
 Requires:	gstreamer-aac >= 1.22
@@ -47,7 +47,7 @@ Requires:	gstreamer-vpx >= 1.22
 Requires:	gstreamer-x264 >= 1.22
 Requires:	gstreamer-zbar >= 1.22
 Requires:	shotwell >= 0.32
-Suggests:	tracker3 >= 3.5
+Suggests:	tracker3 >= 3.6
 Obsoletes:	metapackage-gnome-extras < 2.22
 Obsoletes:	gnome < 2
 BuildArch:	noarch
@@ -64,9 +64,9 @@ Summary:	Accessibility packages for GNOME Desktop Environment
 Summary(pl.UTF-8):	Pakiety ułatwień dostępu dla środowiska graficznego GNOME
 Group:		X11/Applications/Accessibility
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	at-spi2-atk >= 2.48.0
-Requires:	at-spi2-core >= 2.48.0
-Requires:	orca >= 44
+Requires:	at-spi2-atk >= 2.50.0
+Requires:	at-spi2-core >= 2.50.0
+Requires:	orca >= 45
 Provides:	metapackage-gnome-extras-accessibility
 Obsoletes:	metapackage-gnome-extras-accessibility < 2.22
 
@@ -81,8 +81,8 @@ Summary:	Administration packages for GNOME Desktop Environment
 Summary(pl.UTF-8):	Pakiety do zarządzania środowiskiem graficznym GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	gnome-initial-setup >= 44
-Requires:	gnome-software >= 44
+Requires:	gnome-initial-setup >= 45
+Requires:	gnome-software >= 45
 Obsoletes:	gnome-system-tools < 3.0.1
 Obsoletes:	system-tools-backends < 3
 
@@ -97,21 +97,21 @@ Summary:	The core components of the GNOME Desktop Environment
 Summary(pl.UTF-8):	Podstawowe składniki środowiska graficznego GNOME
 Group:		X11/Applications
 Requires:	PackageKit-gtk3-module
-Requires:	adwaita-icon-theme >= 44
+Requires:	adwaita-icon-theme >= 45
 Requires:	dconf >= 0.40.0
-Requires:	eog >= 44
-Requires:	gedit >= 44
-Requires:	gnome-control-center >= 1:44
+Requires:	eog >= 45
+Requires:	gedit >= 45
+Requires:	gnome-control-center >= 1:45
 Requires:	gnome-desktop >= 44
 Requires:	gnome-keyring >= 42
-Requires:	gnome-session >= 1:44
-Requires:	gnome-settings-daemon >= 1:44
-Requires:	gnome-shell >= 44
+Requires:	gnome-session >= 1:45
+Requires:	gnome-settings-daemon >= 1:45
+Requires:	gnome-shell >= 45
 Requires:	gnome-terminal >= 3.48
-Requires:	gsettings-desktop-schemas >= 44
-Requires:	gvfs >= 1.50.0
-Requires:	mutter >= 44
-Requires:	nautilus >= 44
+Requires:	gsettings-desktop-schemas >= 45
+Requires:	gvfs >= 1.52.0
+Requires:	mutter >= 45
+Requires:	nautilus >= 45
 Requires:	xdg-menus
 Requires:	yelp >= 42
 Suggests:	gnome-menus >= 3.36.0
@@ -129,33 +129,33 @@ Summary:	GNOME Desktop Environment
 Summary(pl.UTF-8):	Środowisko graficzne GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	NetworkManager >= 2:1.42.0
+Requires:	NetworkManager >= 2:1.44.0
 Requires:	brasero >= 3.12.0
 #Requires:	abrt-desktop >= 2.14.0
 Requires:	cheese >= 44
-Requires:	dconf-editor >= 43
+Requires:	dconf-editor >= 45
 Requires:	eog-plugins >= 44
-Requires:	epiphany >= 44
-Requires:	evince >= 44
-Requires:	evolution >= 3.48.0
-Requires:	evolution-addressbook >= 3.48.0
-Requires:	evolution-calendar >= 3.48.0
-Requires:	evolution-mail >= 3.48.0
+Requires:	epiphany >= 45
+Requires:	evince >= 45
+Requires:	evolution >= 3.50.0
+Requires:	evolution-addressbook >= 3.50.0
+Requires:	evolution-calendar >= 3.50.0
+Requires:	evolution-mail >= 3.50.0
 Requires:	file-roller >= 43
-Requires:	gnome-calculator >= 44
-Requires:	gnome-calendar >= 44
-Requires:	gdm >= 2:44
-Requires:	gnome-backgrounds >= 44
+Requires:	gnome-calculator >= 45
+Requires:	gnome-calendar >= 45
+Requires:	gdm >= 2:45
+Requires:	gnome-backgrounds >= 45
 Requires:	gnome-bluetooth >= 42
 Requires:	gnome-color-manager >= 3.36.0
-Requires:	gnome-connections >= 44
-Requires:	gnome-disk-utility >= 44
+Requires:	gnome-connections >= 45
+Requires:	gnome-disk-utility >= 45
 Requires:	gnome-packagekit >= 43
 Requires:	gnome-power-manager >= 43
-Requires:	gnome-remote-desktop >= 44
-Requires:	gnome-system-monitor >= 44
-Requires:	gnome-tweaks >= 40
-Requires:	gnome-user-docs >= 44
+Requires:	gnome-remote-desktop >= 45
+Requires:	gnome-system-monitor >= 45
+Requires:	gnome-tweaks >= 45
+Requires:	gnome-user-docs >= 45
 Requires:	gstreamer >= 1.22
 Requires:	gstreamer-audio-effects-base >= 1.22
 Requires:	gstreamer-audio-effects-good >= 1.22
@@ -194,19 +194,19 @@ Requires:	gucharmap >= 12.0.0
 #Requires:	nautilus-extension-brasero >= 3.12.2
 # not ported to nautilus4 in GNOME 43
 #Requires:	nautilus-extension-evince >= 3.38.0
-Requires:	polari >= 43
+Requires:	polari >= 45
 Requires:	seahorse >= 43
 Requires:	seahorse-gnome-shell-search >= 43
 Requires:	sound-juicer >= 3.40.0
-Requires:	gnote >= 44
+Requires:	gnote >= 45
 Requires:	totem >= 43
 Requires:	totem-im-status >= 43
 Requires:	totem-opensubtitles >= 43
-Requires:	zenity >= 3.44.0
+Requires:	zenity >= 4
 Suggests:	%{name}-games = %{version}-%{release}
 # ekiga is dead, linphone is qt-based now; what instead?
 #Suggests:	ekiga >= 4.0.1
-Suggests:	evolution-ews >= 3.48.0
+Suggests:	evolution-ews >= 3.50.0
 Suggests:	pam-pam_gnome_keyring >= 42
 
 %description desktop
@@ -220,7 +220,7 @@ Summary:	Developer tools for GNOME Desktop Environment
 Summary(pl.UTF-8):	Narzędzia programisty dla środowiska graficznego GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	accerciser >= 3.40.0
+Requires:	accerciser >= 3.42.0
 Requires:	anjuta >= 1:3.34.0
 Requires:	anjuta-extras >= 3.26.0
 Requires:	devhelp >= 43
