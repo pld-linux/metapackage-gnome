@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	45
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -29,7 +29,6 @@ Requires:	gstreamer-dvdread >= 1.22
 Requires:	gstreamer-flite >= 1.22
 Requires:	gstreamer-gme >= 1.22
 Requires:	gstreamer-gsm >= 1.22
-Requires:	gstreamer-kate >= 1.22
 Requires:	gstreamer-ladspa >= 1.22
 Requires:	gstreamer-lv2 >= 1.22
 Requires:	gstreamer-mjpegtools >= 1.22
