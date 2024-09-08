@@ -2,7 +2,7 @@ Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
 Version:	46
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -106,7 +106,7 @@ Requires:	gnome-keyring >= 46
 Requires:	gnome-session >= 1:46
 Requires:	gnome-settings-daemon >= 1:46
 Requires:	gnome-shell >= 46
-Requires:	gnome-terminal >= 3.48
+Requires:	gnome-terminal >= 3.52
 Requires:	gsettings-desktop-schemas >= 46
 Requires:	gvfs >= 1.54.0
 Requires:	mutter >= 46
