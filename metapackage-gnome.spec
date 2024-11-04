@@ -1,8 +1,8 @@
 Summary:	GNOME Desktop Environment with additional packages
 Summary(pl.UTF-8):	Środowisko graficzne GNOME z dodatkowymi pakietami
 Name:		metapackage-gnome
-Version:	46
-Release:	2
+Version:	47
+Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
 Requires:	%{name}-accessibility = %{version}-%{release}
@@ -13,7 +13,7 @@ Requires:	%{name}-devtools = %{version}-%{release}
 Requires:	%{name}-games = %{version}-%{release}
 Requires:	%{name}-office = %{version}-%{release}
 Requires:	gnome-getting-started-docs >= 3.38.0
-Requires:	gnome-tour >= 46
+Requires:	gnome-tour >= 47
 Requires:	rhythmbox >= 3.4.7
 Requires:	gstreamer-a52dec >= 1.24
 Requires:	gstreamer-aac >= 1.24
@@ -46,7 +46,7 @@ Requires:	gstreamer-vpx >= 1.24
 Requires:	gstreamer-x264 >= 1.24
 Requires:	gstreamer-zbar >= 1.24
 Requires:	shotwell >= 0.32
-Suggests:	tracker3 >= 3.7
+Suggests:	localsearch >= 3.8
 Obsoletes:	metapackage-gnome-extras < 2.22
 Obsoletes:	gnome < 2
 BuildArch:	noarch
@@ -63,9 +63,9 @@ Summary:	Accessibility packages for GNOME Desktop Environment
 Summary(pl.UTF-8):	Pakiety ułatwień dostępu dla środowiska graficznego GNOME
 Group:		X11/Applications/Accessibility
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	at-spi2-atk >= 2.52.0
-Requires:	at-spi2-core >= 2.52.0
-Requires:	orca >= 46
+Requires:	at-spi2-atk >= 2.54.0
+Requires:	at-spi2-core >= 2.54.0
+Requires:	orca >= 47
 Provides:	metapackage-gnome-extras-accessibility
 Obsoletes:	metapackage-gnome-extras-accessibility < 2.22
 
@@ -80,8 +80,8 @@ Summary:	Administration packages for GNOME Desktop Environment
 Summary(pl.UTF-8):	Pakiety do zarządzania środowiskiem graficznym GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	gnome-initial-setup >= 46
-Requires:	gnome-software >= 46
+Requires:	gnome-initial-setup >= 47
+Requires:	gnome-software >= 47
 Obsoletes:	gnome-system-tools < 3.0.1
 Obsoletes:	system-tools-backends < 3
 
@@ -96,21 +96,21 @@ Summary:	The core components of the GNOME Desktop Environment
 Summary(pl.UTF-8):	Podstawowe składniki środowiska graficznego GNOME
 Group:		X11/Applications
 Requires:	PackageKit-gtk3-module
-Requires:	adwaita-icon-theme >= 46
+Requires:	adwaita-icon-theme >= 47
 Requires:	dconf >= 0.40.0
-Requires:	eog >= 45
-Requires:	gedit >= 46
-Requires:	gnome-control-center >= 1:46
+Requires:	eog >= 47
+Requires:	gedit >= 47
+Requires:	gnome-control-center >= 1:47
 Requires:	gnome-desktop >= 44
 Requires:	gnome-keyring >= 46
-Requires:	gnome-session >= 1:46
-Requires:	gnome-settings-daemon >= 1:46
-Requires:	gnome-shell >= 46
-Requires:	gnome-terminal >= 3.52
-Requires:	gsettings-desktop-schemas >= 46
-Requires:	gvfs >= 1.54.0
-Requires:	mutter >= 46
-Requires:	nautilus >= 46
+Requires:	gnome-session >= 1:47
+Requires:	gnome-settings-daemon >= 1:47
+Requires:	gnome-shell >= 47
+Requires:	gnome-terminal >= 3.54
+Requires:	gsettings-desktop-schemas >= 47
+Requires:	gvfs >= 1.56.0
+Requires:	mutter >= 47
+Requires:	nautilus >= 47
 Requires:	xdg-menus
 Requires:	yelp >= 42
 Suggests:	gnome-menus >= 3.36.0
@@ -128,33 +128,32 @@ Summary:	GNOME Desktop Environment
 Summary(pl.UTF-8):	Środowisko graficzne GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	NetworkManager >= 2:1.46.0
+Requires:	NetworkManager >= 2:1.50.0
 Requires:	brasero >= 3.12.0
 #Requires:	abrt-desktop >= 2.14.0
 Requires:	cheese >= 44
 Requires:	dconf-editor >= 45
 Requires:	eog-plugins >= 44
-Requires:	epiphany >= 46
-Requires:	evince >= 46
-Requires:	evolution >= 3.52.0
-Requires:	evolution-addressbook >= 3.52.0
-Requires:	evolution-calendar >= 3.52.0
-Requires:	evolution-mail >= 3.52.0
+Requires:	epiphany >= 47
+Requires:	evolution >= 3.54.0
+Requires:	evolution-addressbook >= 3.54.0
+Requires:	evolution-calendar >= 3.54.0
+Requires:	evolution-mail >= 3.54.0
 Requires:	file-roller >= 44
-Requires:	gnome-calculator >= 46
-Requires:	gnome-calendar >= 46
-Requires:	gdm >= 2:46
-Requires:	gnome-backgrounds >= 46
-Requires:	gnome-bluetooth >= 46
+Requires:	gnome-calculator >= 47
+Requires:	gnome-calendar >= 47
+Requires:	gdm >= 2:47
+Requires:	gnome-backgrounds >= 47
+Requires:	gnome-bluetooth >= 47
 Requires:	gnome-color-manager >= 3.36.0
-Requires:	gnome-connections >= 46
+Requires:	gnome-connections >= 47
 Requires:	gnome-disk-utility >= 46
 Requires:	gnome-packagekit >= 43
 Requires:	gnome-power-manager >= 43
-Requires:	gnome-remote-desktop >= 46
-Requires:	gnome-system-monitor >= 46
+Requires:	gnome-remote-desktop >= 47
+Requires:	gnome-system-monitor >= 47
 Requires:	gnome-tweaks >= 46
-Requires:	gnome-user-docs >= 46
+Requires:	gnome-user-docs >= 47
 Requires:	gstreamer >= 1.24
 Requires:	gstreamer-audio-effects-base >= 1.24
 Requires:	gstreamer-audio-effects-good >= 1.24
@@ -191,13 +190,13 @@ Requires:	gstreamer-ximagesrc >= 1.24
 Requires:	gucharmap >= 15.0.0
 # not ported to nautilus4
 #Requires:	nautilus-extension-brasero >= 3.12.2
-# not ported to nautilus4 in GNOME 43
-#Requires:	nautilus-extension-evince >= 3.38.0
+Requires:	nautilus-extension-papers >= 47
+Requires:	papers >= 47
 Requires:	polari >= 46
-Requires:	seahorse >= 43
-Requires:	seahorse-gnome-shell-search >= 43
+Requires:	seahorse >= 47
+Requires:	seahorse-gnome-shell-search >= 47
 Requires:	sound-juicer >= 3.40.0
-Requires:	gnote >= 46
+Requires:	gnote >= 47
 Requires:	totem >= 43
 Requires:	totem-im-status >= 43
 Requires:	totem-opensubtitles >= 43
@@ -205,7 +204,7 @@ Requires:	zenity >= 4
 Suggests:	%{name}-games = %{version}-%{release}
 # ekiga is dead, linphone is qt-based now; what instead?
 #Suggests:	ekiga >= 4.0.1
-Suggests:	evolution-ews >= 3.52.0
+Suggests:	evolution-ews >= 3.54.0
 Suggests:	pam-pam_gnome_keyring >= 46
 
 %description desktop
@@ -219,7 +218,7 @@ Summary:	Developer tools for GNOME Desktop Environment
 Summary(pl.UTF-8):	Narzędzia programisty dla środowiska graficznego GNOME
 Group:		X11/Applications
 Requires:	%{name}-core = %{version}-%{release}
-Requires:	accerciser >= 3.42.0
+Requires:	accerciser >= 3.44.0
 Requires:	anjuta >= 1:3.34.0
 Requires:	anjuta-extras >= 3.26.0
 Requires:	devhelp >= 43
@@ -241,14 +240,14 @@ Requires:	aisleriot >= 3.22
 Requires:	five-or-more >= 3.32
 Requires:	four-in-a-row >= 3.38.0
 Requires:	gnome-2048 >= 3.38.0
-Requires:	gnome-chess >= 46
+Requires:	gnome-chess >= 47
 Requires:	gnome-games >= 1:40
 Requires:	gnome-klotski >= 3.38.0
-Requires:	gnome-mahjongg >= 3.40.0
+Requires:	gnome-mahjongg >= 47
 Requires:	gnome-mines >= 40
-Requires:	gnome-nibbles >= 4.0
+Requires:	gnome-nibbles >= 4.1
 Requires:	gnome-robots >= 40
-Requires:	gnome-sudoku >= 46
+Requires:	gnome-sudoku >= 47
 Requires:	gnome-taquin >= 3.38.0
 Requires:	gnome-tetravex >= 3.38.0
 Requires:	hitori >= 44
